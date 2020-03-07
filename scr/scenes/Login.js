@@ -10,7 +10,7 @@ import {
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
 
-const Login = () => {
+const Login = ({navigation}) => {
   return(
     <>
       <SafeAreaView>
@@ -20,11 +20,11 @@ const Login = () => {
           <View style={styles.sectionContainer}>
             <ImageBackground
               style={styles.backgroundImage}
-              source={require("./scr/assets/imgs/hitt.jpg")}>
+              source={require("../assets/imgs/hitt.jpg")}>
               <View style={styles.home}>
                 <Text style={styles.homeTitle}>HITT Mobile</Text>
                 {/* <Navigator initialRender />  */}
-                <Text style={styles.homeTitle} onPress={() => console.log(props)}>
+                <Text style={styles.homeTitle} onPress={() => navigation.navigate('Home')}>
                   Go to next page
                 </Text>
               </View>
@@ -32,7 +32,7 @@ const Login = () => {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </>;
+    </>
   )
 }
 
