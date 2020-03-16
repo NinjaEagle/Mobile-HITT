@@ -1,13 +1,13 @@
 import "react-native-gesture-handler";
 import React from "react";
-import {View} from 'react-native'
+import { ApplicationProvider, Layout, Text } from "@ui-kitten/components";
+import { mapping, light as lightTheme } from "@eva-design/eva";
 import AppNavigator from './AppNavigator';
 
-const App = props => {
-	console.log(props)
-	return(
-			<AppNavigator/>
-	)
-};
+const App = props => (
+<ApplicationProvider mapping={mapping} theme={lightTheme}>
+	<AppNavigator/>
+</ApplicationProvider>
+);
 
 export default App;
