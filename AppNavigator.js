@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Home from "./scr/scenes/Home";
-import Login from "./scr/scenes/Login";
+import Home from "./src/scenes/Home";
+import Login from "./src/scenes/Login";
 
 const Stack = createStackNavigator();
 
@@ -25,5 +25,3 @@ export default function AppNavigator() {
     </NavigationContainer>
   );
 };
-
-

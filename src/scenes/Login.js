@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -11,6 +11,10 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 
 
 const Login = ({navigation}) => {
+	const [userName, setUserName] = useState('');
+	const [password, setPassword] = useState('');
+
+	
   return(
     <>
       <SafeAreaView>
