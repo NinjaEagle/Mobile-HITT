@@ -1,11 +1,18 @@
 import React from 'react'
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
+import { Layout, Text } from "@ui-kitten/components";
 
-const Home = () => {
+import NavBar from '../components/NavBar';
+
+const Home = ({navigation}) => {
+
   return(
-    <View>
-      <Text style={styles.home}>Hello from Home Page </Text>
-    </View>
+    <>
+    <Layout style={styles.home}>
+      <Text >Hello from Home Page </Text>
+    </Layout>
+    <NavBar nav={navigation}/>
+    </>
   );
 };
 
@@ -14,8 +21,9 @@ const styles = StyleSheet.create({
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
-    height: 790,
-    fontWeight: '800',
+		height: 750,
+		// fontWeight: "800",
 	},
+	
 });
 export default Home;

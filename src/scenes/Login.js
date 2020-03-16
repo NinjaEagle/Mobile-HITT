@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Layout, Button } from "@ui-kitten/components";
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -15,32 +16,39 @@ const Login = ({navigation}) => {
 	const [password, setPassword] = useState('');
 
 	
-  return(
-    <>
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior='automatic'
-          style={styles.scrollView}>
-          <View style={styles.sectionContainer}>
-            <ImageBackground
-              style={styles.backgroundImage}
-              source={require("../assets/imgs/hitt.jpg")}>
-              <View style={styles.home}>
-                <Text style={styles.homeTitle}>HITT Mobile</Text>
-                {/* <Navigator initialRender />  */}
-                <Text style={styles.homeTitle} onPress={() => navigation.navigate('Home')}>
-                  Go to next page
-                </Text>
-              </View>
-            </ImageBackground>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  )
+  return (
+		<>
+			<ScrollView
+				contentInsetAdjustmentBehavior='automatic'
+				style={styles.scrollView}>
+
+				<Layout style={styles.container}>
+					<ImageBackground
+						style={styles.backgroundImage}
+						source={require("../assets/imgs/hitt.jpg")}>
+							
+						<Layout style={styles.home}>
+
+							<Text style={styles.homeTitle} category='h1'>
+								HITT Mobile
+							</Text>
+
+							<Button
+								style={styles.homeTitle}
+								onPress={() => navigation.navigate("Home")}>
+								Login
+							</Button>
+						</Layout>
+
+					</ImageBackground>
+				</Layout>
+
+			</ScrollView>
+		</>
+	);
 }
 
-
+//////////////////////Sytle Sheets//////////////////////////
 const styles = StyleSheet.create({
   scrollView: {
 		backgroundColor: Colors.lighter,
@@ -50,6 +58,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center",
 		height: 790,
+		backgroundColor: 'transparent'
 	},
 	homeTitle: {
 		fontSize: 40,
