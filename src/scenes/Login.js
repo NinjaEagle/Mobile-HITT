@@ -22,23 +22,29 @@ const Login = ({navigation}) => {
 				contentInsetAdjustmentBehavior='automatic'
 				style={styles.scrollView}>
 
-				<Layout style={styles.container}>
+				<Layout style={styles.sectionContainer}>
 					<ImageBackground
 						style={styles.backgroundImage}
 						source={require("../assets/imgs/hitt.jpg")}>
 							
 						<Layout style={styles.home}>
 
-							<Text style={styles.homeTitle} category='h1'>
+							<Text style={styles.heading} category='h1'>
 								HITT Mobile
 							</Text>
 
-							<Button
-								style={styles.homeTitle}
-								onPress={() => navigation.navigate("Home")}>
-								Login
-							</Button>
+								<Button
+									style={styles.button}
+									onPress={() => navigation.navigate("Home")}>
+									Login
+								</Button>
+
+							<Layout style={styles.signup}>
+								<Text >Don't have an account?</Text>
+								<Text onPress={()=>navigation.navigate('SignUp')}>SignUp</Text>
+							</Layout>
 						</Layout>
+
 
 					</ImageBackground>
 				</Layout>
@@ -48,23 +54,35 @@ const Login = ({navigation}) => {
 	);
 }
 
-//////////////////////Sytle Sheets//////////////////////////
+//////////////////////Style Sheets//////////////////////////
 const styles = StyleSheet.create({
-  scrollView: {
+	scrollView: {
 		backgroundColor: Colors.lighter,
 	},
 	home: {
-    display: "flex",
+		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
 		height: 790,
-		backgroundColor: 'transparent'
+		backgroundColor: "transparent",
 	},
-	homeTitle: {
+	heading: {
+		top: -170,
 		fontSize: 40,
 		fontWeight: "800",
-		// fontFamily: "",
+		// fontFamily: "lato",
 		color: "white",
+	},
+	button: {
+		width: "50%",
+		textAlign: "center",
+		// padding: '30%'
+	},
+	signup: {
+		display: "flex",
+		flexDirection: "row",
+		backgroundColor: "transparent",
+		marginTop: '1%'
 	},
 	backgroundImage: {
 		flex: 1,
@@ -76,9 +94,7 @@ const styles = StyleSheet.create({
 	},
 	sectionContainer: {
 		display: "flex",
-		marginTop: 32,
-		paddingHorizontal: 24,
-		backgroundColor: "orange",
+		backgroundColor: "rgba(26, 193, 245, 0.49)",
 	},
 });
 
