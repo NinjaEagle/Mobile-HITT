@@ -1,27 +1,36 @@
 import React, {useState} from 'react';
-// import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { SafeAreaView } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Home from "../scenes/Home";
+import Performance from "../scenes/Performance";
+import Profile from "../scenes/Profile";
+import Exercise from "../scenes/Exercise";
 // import { StyleSheet, SafeAreaView } from "react-native";
 import {
   BottomNavigation,
 	BottomNavigationTab,
-	Layout,
+	Layout, Text
 } from "@ui-kitten/components";
 
 
-// const BottomTab = createBottomTabNavigator();
+const BottomTab = createBottomTabNavigator();
 
-const NavBar = ({nav}) => {
+const NavBar = ({navigation, state}) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  
+
+  const onSelect = (index) => {
+    navigation.navigate(state.routeNames[index]);
+  };
   return (
-		<Layout>
+		<SafeAreaView>
 			<BottomNavigation
 				selectedIndex={selectedIndex}
-				onSelect={setSelectedIndex}>
+				onSelect={onSelect}>
 				<BottomNavigationTab title='HOME' onSelect={() => nav.navigate("Home")} />
 				<BottomNavigationTab
 					title='PROFILE'
-					onSelect={() => nav.navigate("Profile")}
+					onSelect={()=>nav.navigate("Profile")}
 				/>
 				<BottomNavigationTab
 					title='WORKOUTS'
@@ -32,10 +41,22 @@ const NavBar = ({nav}) => {
 					onSelect={() => nav.navigate("Performance")}
 				/>
 			</BottomNavigation>
-		</Layout>
+		</SafeAreaView>
 	);
 };
 
+const TabNavigator = () => (
+	<BottomTab.Navigator tabBar={props => <NavBar {...props} />}>
+		<BottomTab.Screen name='Workouts' component={Exercise} />
+		<BottomTab.Screen name='Performance' component={Performance} />
+		<BottomTab.Screen name='Profile' component={Profile} />
+	</BottomTab.Navigator>
+);
 
+export const AppNavigator = () => (
+	<NavigationContainer>
+		<TabNavigator />
+	</NavigationContainer>
+);
 
 export default NavBar;

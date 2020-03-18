@@ -11,7 +11,8 @@ import {
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
 
-const Login = ({navigation}) => {
+const Login = (props) => {
+	console.log( props)
 	const [userName, setUserName] = useState('');
 	const [password, setPassword] = useState('');
 

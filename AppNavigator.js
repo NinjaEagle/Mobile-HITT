@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Home from "./src/scenes/Home";
 import Login from "./src/scenes/Login";
 import SignUp from "./src/scenes/SignUp";
-import Performance from "./src/scenes/Login";
+import Performance from "./src/scenes/Performance";
 import Profile from "./src/scenes/Profile";
 import Exercise from "./src/scenes/Exercise";
 
