@@ -12,7 +12,6 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Login = ({navigation}) => {
   return(
-    <>
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior='automatic'
@@ -25,14 +24,13 @@ const Login = ({navigation}) => {
                 <Text style={styles.homeTitle}>HITT Mobile</Text>
                 {/* <Navigator initialRender />  */}
                 <Text style={styles.homeTitle} onPress={() => navigation.navigate('Home')}>
-                  Go to next page
+                  Home
                 </Text>
               </View>
             </ImageBackground>
           </View>
         </ScrollView>
       </SafeAreaView>
-    </>
   )
 }
 
