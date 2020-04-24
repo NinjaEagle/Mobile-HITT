@@ -1,15 +1,11 @@
-import React from "react";
-import { View, Text } from "react-native";
-import NavBar from "../components/NavBar";
+import React from 'react';
+import { View, Text } from 'react-native';
 
 const Profile = () => {
-	return (
-		<>
-		<View>
-			<Text>Profile Page</Text>
-		</View>
-		<NavBar/>
-		</>
-	);
+  return (
+    <View>
+      <Text>Profile Page</Text>
+    </View>
+  );
 };
 export default Profile;
