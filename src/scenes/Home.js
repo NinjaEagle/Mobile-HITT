@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 import { Layout, Text } from "@ui-kitten/components";
 
 import NavBar from '../components/NavBar';
+import Timer from "../components/Timer";
 
 const Home = ({navigation}) => {
 
@@ -10,6 +11,9 @@ const Home = ({navigation}) => {
     <>
     <Layout style={styles.home}>
       <Text >Hello from Home Page </Text>
+      <Layout>
+        <Timer/>
+      </Layout>
     </Layout>
     <NavBar nav={navigation}/>
     </>
