@@ -4,19 +4,36 @@ import { Layout, Text, Button } from "@ui-kitten/components";
 
 const Timer = () => {
 	//takes in mins + seconds
-  const [time, setTime] = useState(10);
-  const timeRef = useRef();
+  const [seconds, setSeconds] = useState(5);
+  const [isActive, setIsActive] = useState(false);
+  console.log(seconds,isActive);
+  
+  useEffect(() => {
+    let interval;
+    if(isActive && seconds > 0){
+      interval = setInterval(() => {
+        setSeconds(seconds - 1)
+      },1000);
+    } else if(seconds <= 0) {
+      console.log("clearing interval")
+      clearInterval(interval)
+    };
+    return () => {
+      console.log("cleanUP")
+      clearInterval(interval)
+    };
+
+  }, [seconds, isActive]);
 
 	const startTime = () => {
-    time > 0 && setTimeout(() => setTime(time - 1), 1000);
-    // if(timeRef.current <= 0) stopTime();
+    seconds > 0 && setTimeout(() => setSeconds(seconds - 1), 10);
 	};
 
-
-	const PauseTime = () => {};
-	const stopTime = (timer) => {
-    timeRef.current = clearTimeout();
+	const stopTime = () => {
+    console.log("stopped");
+    clearTimeout();
   };
+  const PauseTime = () => {};
 	const resetTime = () => {};
 
 	return (
@@ -24,8 +41,8 @@ const Timer = () => {
 			<View>
 				<Text>Timer</Text>
 				<View>
-					<Text>Time remaining: {time} </Text>
-					<Button onPress={startTime}>Start</Button>
+					<Text>Time remaining: {seconds} </Text>
+					<Button onPress={() => setIsActive(true)}>Start</Button>
 				</View>
 			</View>
 		</Layout>
