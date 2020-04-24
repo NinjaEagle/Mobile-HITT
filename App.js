@@ -11,6 +11,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
+import Exercise from './src/scenes/Exercise';
 
 function HomeScreen() {
   return (
@@ -26,11 +27,15 @@ export default class App extends React.Component {
   }
 
   render() {
+    console.log('Hi');
+
     return (
       <>
         <IconRegistry icons={EvaIconsPack} />
         <ApplicationProvider {...eva} theme={eva.light}>
-          <AppNavigator />
+          {/* <AppNavigator /> */}
+          {isLoggedIn ? <Home /> : <Login />}
+          <Exercise />
         </ApplicationProvider>
       </>
     );

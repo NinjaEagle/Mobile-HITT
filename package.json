@@ -3,12 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "start": "expo start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
-    "eject": "expo eject"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@eva-design/eva": "^2.0.0-alpha.1",

@@ -28,7 +28,8 @@ export const Exercise = ({ navigation }) => {
       <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text category="h1">Tabata</Text>
         <View style={styles.container}>
-          <Image style={styles.tinyLogo} source={require('./assets/imgs/running.jpg')} />
+          <Image style={styles.tinyLogo} source={require('../../assets/imgs/running.jpg')} />
+          <Text category="h1">Running</Text>
         </View>
       </Layout>
       <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
