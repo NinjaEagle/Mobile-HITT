@@ -34,7 +34,7 @@ const Timer = () => {
         keyboardType = {"numeric"}
         maxLength = {2}
         value = {seconds}
-        onChangeText = {() => setSeconds(seconds)}
+        onChangeText = {seconds => setSeconds(seconds)}
         />
 				<Text>Timer</Text>
 				<View>
