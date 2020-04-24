@@ -6,7 +6,8 @@ const Timer = () => {
 	//takes in mins + seconds
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
-  console.log(seconds,isActive);
+  const secondsRef = useRef(seconds)
+  console.log(seconds,isActive, secondsRef);
   
   useEffect(() => {
     let interval;
@@ -34,7 +35,11 @@ const Timer = () => {
         keyboardType = {"numeric"}
         maxLength = {2}
         value = {seconds}
-        onChangeText = {seconds => setSeconds(seconds)}
+        onChangeText = {seconds => {
+          setSeconds(seconds)
+          secondsRef.current = seconds
+        }}
+        autoFocus
         />
 				<Text>Timer</Text>
 				<View>
@@ -47,9 +52,8 @@ const Timer = () => {
               : 
             null
           }
-          {/* <Button>
-            Reset
-          </Button> */}
+        {secondsRef ? <Button onPress = {() => setSeconds(secondsRef.current)} >Reset</Button> : null
+        }
 				</View>
 			</View>
 		</Layout>
