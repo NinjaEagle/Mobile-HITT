@@ -1,56 +1,18 @@
 import 'react-native-gesture-handler';
-import * as React from 'react';
+import React, { useState } from 'react';
+import { ApplicationProvider } from '@ui-kitten/components';
 import { mapping, light as lightTheme } from '@eva-design/eva';
-import { AppNavigator } from './src/components/AppNavigator';
-import { EvaIconsPack } from '@ui-kitten/eva-icons';
-import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
-import { ScreenOrientation } from 'expo';
-import { StatusBar } from 'react-native';
+import Login from './src/scenes/Login';
+import Home from './src/scenes/Home';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-
-const Stack = createStackNavigator();
-import Exercise from './src/scenes/Exercise';
-
-function HomeScreen() {
+const App = props => {
+  const [isLoggedin, setisLoggedin] = useState(false);
+  console.log(props);
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
-    </View>
+    <ApplicationProvider mapping={mapping} theme={lightTheme}>
+      {isLoggedin ? <Home /> : <Login signIn={setisLoggedin} />}
+    </ApplicationProvider>
   );
-}
+};
 
-export default class App extends React.Component {
-  componentDidMount() {
-    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE_LEFT);
-  }
-
-  render() {
-    console.log('Hi');
-
-    return (
-      <>
-        <IconRegistry icons={EvaIconsPack} />
-        <ApplicationProvider {...eva} theme={eva.light}>
-          {/* <AppNavigator /> */}
-          {isLoggedIn ? <Home /> : <Login />}
-          <Exercise />
-        </ApplicationProvider>
-      </>
-    );
-  }
-}
-
-// const App = () => {
-//   return (
-//     <>
-//       <IconRegistry icons={EvaIconsPack} />
-//       <ApplicationProvider mapping={mapping} theme={lightTheme}>
-//         <AppNavigator />
-//       </ApplicationProvider>
-//     </>
-//   );
-// };
-
-// export default App;
+export default App;

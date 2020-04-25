@@ -4,30 +4,34 @@ import { Layout, Button } from '@ui-kitten/components';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { hitt } from '../../assets/imgs/hitt.jpg';
 
-const Login = props => {
-  console.log(props);
+const Login = ({ signIn }) => {
+  // console.log( props);
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
   return (
-    <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
-      <Layout style={styles.sectionContainer}>
-        <ImageBackground style={styles.backgroundImage} source={hitt}>
-          <Layout style={styles.home}>
-            <Text style={styles.heading} category="h1">
-              HITT Mobile
-            </Text>
-            <Button style={styles.button} onPress={() => navigation.navigate('Home')}>
-              Login
-            </Button>
-            <Layout style={styles.signup}>
-              <Text>Don't have an account?</Text>
-              <Text onPress={() => navigation.navigate('SignUp')}>SignUp</Text>
+    <>
+      <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
+        <Layout style={styles.sectionContainer}>
+          <ImageBackground style={styles.backgroundImage} source={hitt}>
+            <Layout style={styles.home}>
+              <Text style={styles.heading} category="h1">
+                HITT Mobile
+              </Text>
+
+              <Button style={styles.button} onPress={() => signIn(true)}>
+                Login
+              </Button>
+
+              <Layout style={styles.signup}>
+                <Text>Don't have an account?</Text>
+                <Text onPress={() => navigation.navigate('SignUp')}>SignUp</Text>
+              </Layout>
             </Layout>
-          </Layout>
-        </ImageBackground>
-      </Layout>
-    </ScrollView>
+          </ImageBackground>
+        </Layout>
+      </ScrollView>
+    </>
   );
 };
 
