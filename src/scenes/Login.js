@@ -11,8 +11,8 @@ import {
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
 
-const Login = (props) => {
-	console.log( props)
+const Login = ({signIn}) => {
+	// console.log( props);
 	const [userName, setUserName] = useState('');
 	const [password, setPassword] = useState('');
 
@@ -36,7 +36,8 @@ const Login = (props) => {
 
 								<Button
 									style={styles.button}
-									onPress={() => navigation.navigate("Home")}>
+									onPress={() => signIn(true)}
+								>
 									Login
 								</Button>
 
@@ -45,7 +46,6 @@ const Login = (props) => {
 								<Text onPress={()=>navigation.navigate('SignUp')}>SignUp</Text>
 							</Layout>
 						</Layout>
-
 
 					</ImageBackground>
 				</Layout>
