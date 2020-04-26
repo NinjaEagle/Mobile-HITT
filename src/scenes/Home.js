@@ -1,18 +1,19 @@
 import React from 'react'
 import { StyleSheet } from "react-native";
-import { Layout, Text } from "@ui-kitten/components";
+import { Layout, Text, Button } from "@ui-kitten/components";
 
 import NavBar from '../components/NavBar';
 import Timer from "../components/Timer";
 
-const Home = () => {
+const Home = ({signIn}) => {
 
   return(
     <>
     <Layout style={styles.home}>
+      <Button signIn onPress={() => signIn(false)}>Logout</Button>
       {/* <Text >Hello from Home Page </Text> */}
 
-      <Layout>
+      <Layout style={{marginTop:100}}>
         <Timer/>
       </Layout>
     </Layout>
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
-		height: 750,
+    height: 750,
 		// fontWeight: "800",
 	},
 	

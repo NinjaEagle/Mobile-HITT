@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { View, TextInput } from "react-native";
+import { TextInput } from "react-native";
 import { Layout, Text, Button } from "@ui-kitten/components";
 
 const Timer = () => {
 	//takes in mins + seconds
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(null);
   const [isActive, setIsActive] = useState(false);
-  const secondsRef = useRef(seconds)
+  const secondsRef = useRef(seconds);
   console.log(seconds,isActive, secondsRef);
   
   useEffect(() => {
@@ -25,11 +25,14 @@ const Timer = () => {
     };
   }, [seconds, isActive]);
 
-	const resetTime = () => {};
+	const reset = () => {
+    setSeconds(secondsRef.current);
+    setIsActive(false);
+  };
 
 	return (
 		<Layout>
-			<View>
+			<Layout>
         <TextInput 
         placeholder = "seconds"
         keyboardType = {"numeric"}
@@ -41,8 +44,9 @@ const Timer = () => {
         }}
         autoFocus
         />
+        
 				<Text>Timer</Text>
-				<View>
+				<Layout>
 					<Text>Time remaining: {seconds} </Text>
 
           {seconds ? 
@@ -52,10 +56,10 @@ const Timer = () => {
               : 
             null
           }
-        {secondsRef ? <Button onPress = {() => setSeconds(secondsRef.current)} >Reset</Button> : null
-        }
-				</View>
-			</View>
+
+        {secondsRef !== 0 ? <Button onPress={reset}> Reset </Button> : null}
+				</Layout>
+			</Layout>
 		</Layout>
 	);
 };

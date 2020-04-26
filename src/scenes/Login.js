@@ -6,6 +6,7 @@ import {
 	ScrollView,
 	View,
 	Text,
+	TextInput,
 	ImageBackground
 } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
@@ -15,41 +16,49 @@ const Login = ({signIn}) => {
 	// console.log( props);
 	const [userName, setUserName] = useState('');
 	const [password, setPassword] = useState('');
-
+console.log(userName, password);
 	
   return (
 		<>
 			<ScrollView
 				contentInsetAdjustmentBehavior='automatic'
 				style={styles.scrollView}>
-
 				<Layout style={styles.sectionContainer}>
 					<ImageBackground
 						style={styles.backgroundImage}
 						source={require("../assets/imgs/hitt.jpg")}>
-							
 						<Layout style={styles.home}>
-
 							<Text style={styles.heading} category='h1'>
 								HITT Mobile
 							</Text>
 
-								<Button
-									style={styles.button}
-									onPress={() => signIn(true)}
-								>
-									Login
-								</Button>
+							<TextInput
+								style={styles.input}
+								placeholder='Username'
+								onChangeText={userName => setUserName(userName)}
+								value={userName}
+							/>
+
+							<TextInput
+								style={styles.input}
+								placeholder='Password'
+								onChangeText={password => setPassword(password)}
+								value={password}
+							/>
+
+							<Button style={styles.button} onPress={() => signIn(true)}>
+								Login
+							</Button>
 
 							<Layout style={styles.signup}>
-								<Text >Don't have an account?</Text>
-								<Text onPress={()=>navigation.navigate('SignUp')}>SignUp</Text>
+								<Text>Don't have an account?</Text>
+								<Text onPress={() => navigation.navigate("SignUp")}>
+									SignUp
+								</Text>
 							</Layout>
 						</Layout>
-
 					</ImageBackground>
 				</Layout>
-
 			</ScrollView>
 		</>
 	);
@@ -74,10 +83,20 @@ const styles = StyleSheet.create({
 		// fontFamily: "lato",
 		color: "white",
 	},
+	input: {
+		borderColor: 'grey',
+		backgroundColor: "#ccc" ,
+		// width: "50%",
+		textAlign: "center",
+		fontSize: 24,
+		color: "white",
+		// height: 40,fdafdfa
+		padding: '2%',
+		marginBottom: 10
+	},
 	button: {
 		width: "50%",
-		textAlign: "center",
-		// padding: '30%'
+		// textAlign: "center",
 	},
 	signup: {
 		display: "flex",

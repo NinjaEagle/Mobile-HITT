@@ -10,7 +10,7 @@ const App = props => {
 	console.log( props);
 	return (
 		<ApplicationProvider mapping={mapping} theme={lightTheme}>
-			{isLoggedin ? <Home/> : <Login signIn={setisLoggedin}/>}
+			{isLoggedin ? <Home signIn={setisLoggedin}/> : <Login signIn={setisLoggedin}/>}
 		</ApplicationProvider>
 	);
 };
