@@ -1,6 +1,0 @@
-module Pods_Hitt2 {
-  umbrella header "Pods-Hitt2-umbrella.h"
-
-  export *
-  module * { export * }
-}
