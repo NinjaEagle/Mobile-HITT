@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { TextInput } from "react-native";
 import { Layout, Text, Button } from "@ui-kitten/components";
 
+import TimerInput from './TimerInput'
+
 const Timer = () => {
 	//takes in mins + seconds
   const [seconds, setSeconds] = useState(null);
@@ -31,24 +33,8 @@ const Timer = () => {
   };
 
 	return (
-		<Layout>
-			<Layout>
-        <TextInput 
-        placeholder = "seconds"
-        keyboardType = {"numeric"}
-        maxLength = {2}
-        value = {seconds}
-        onChangeText = {seconds => {
-          setSeconds(seconds)
-          secondsRef.current = seconds
-        }}
-        autoFocus
-        />
-        
-
-				<Layout>
+    <Layout> 
 					<Text>Time remaining: {seconds} </Text>
-
           {seconds ? 
             <Button onPress={() => setIsActive(!isActive)}> 
               {isActive ? 'Pause' : 'Start'}
@@ -56,10 +42,8 @@ const Timer = () => {
               : 
             null
           }
-
         {secondsRef !== 0 ? <Button onPress={reset}> Reset </Button> : null}
-				</Layout>
-			</Layout>
+
 		</Layout>
 	);
 };
