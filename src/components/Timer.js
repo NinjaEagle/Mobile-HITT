@@ -7,7 +7,7 @@ const Timer = () => {
   const [seconds, setSeconds] = useState(null);
   const [isActive, setIsActive] = useState(false);
   const secondsRef = useRef(seconds);
-  console.log(seconds,isActive, secondsRef);
+  // console.log(seconds,isActive, secondsRef);
   
   useEffect(() => {
     let interval;

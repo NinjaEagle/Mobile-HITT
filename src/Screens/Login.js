@@ -46,7 +46,7 @@ console.log(userName, password);
 								value={password}
 							/>
 
-							<Button style={styles.button} onPress={() => signIn(true)}>
+							<Button title="Login" style={styles.button} onPress={() => signIn(true)}>
 								Login
 							</Button>
 
