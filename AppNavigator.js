@@ -27,7 +27,7 @@ const TabNavigator = () => (
 	<Navigator tabBar={(props) => <NavBar {...props} />}>
 		<Screen name='Home' component={Home} />
 		<Screen name='Workouts' component={Exercise} />
-		{/* <Screen name='Performance' component={Performance} /> */}
+		<Screen name='Performance' component={Performance} />
 		<Screen name='Profile' component={Profile} />
 	</Navigator>
 );

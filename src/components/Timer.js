@@ -45,7 +45,7 @@ const Timer = () => {
         autoFocus
         />
         
-				<Text>Timer</Text>
+
 				<Layout>
 					<Text>Time remaining: {seconds} </Text>
 
