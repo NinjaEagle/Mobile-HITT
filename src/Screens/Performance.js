@@ -11,17 +11,15 @@ import TimerDisplay from "../components/TimerDisplay";
 
 const Perfomance = () => {
 	const [isMode, setIsMode] = useState(false);
-	const [timers, setTimers] = useState([{title:'test', time:5}, {title:'yo', time: 5}, {title:'hi', time: 5}]);
+	const [timers, setTimers] = useState([{id:1, title:'test', time:5}, {id:2, title:'yo', time: 4}, {id:3, title:'hi', time: 3}]);
 
-	// console.log(timers)
+
 
 	// adds up all the added timers 
 	const totalTime = () => {
-		// bug: when new timer is added it is concatnated instead of adding
 		let totalTime = 0;
 		timers.forEach(timer => {
-			console.log(timer)
-			totalTime += timer.time;
+			totalTime += parseInt(timer.time);
 		});
 		return totalTime;
 	};
@@ -29,6 +27,15 @@ const Perfomance = () => {
 	const showTimerInput = () => setIsMode(true);
 
 	const closeInput = () => setIsMode(false);
+
+	const dequeueTimer = () => { //setTimers if first attempt fails
+		console.log(timers);
+		let curTimer = timers.shift();
+		console.log(timers, curTimer)
+		return curTimer.time;
+
+		// a bit lost pick up tomorrow
+	};
 
 	const AddTimerBtnHandler = timerObj => {
 		setTimers(curTimers => [
@@ -42,13 +49,14 @@ const Perfomance = () => {
 		closeInput();
 	};
 	
-	
 	return (
 		<Layout style={styles.contianer}>
 			<Layout style={styles.exerciseInfo}>
-				{timers.length > 0 ? (
+				{timers.length > 0 ? 
 					<TimerDisplay title={timers[0].title} time={timers[0].time} />
-				) : null}
+				 	: 
+				 	null
+				}
 				<Text>Time left: {totalTime()} seconds</Text>
 
 				<ProgressBar 
@@ -78,7 +86,9 @@ const Perfomance = () => {
 			</Layout>
 
 			<Layout>
-				<Timer />
+				{timers.length > 0 ? //might be able to make in to a function to display
+					<Timer activeTime={dequeueTimer} next={dequeueTimer}/> : null
+				}
 			</Layout>
 		</Layout>
 	);
