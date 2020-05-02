@@ -1,12 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import { StyleSheet, View, Modal, TextInput, Button} from 'react-native';
 
 const TimerInput = ({isVisible, onCancel, addTimer}) => {
-  const [time, setTime] = useState(null);
+  const [time, setTime] = useState(0);
   const [title, setTitle] = useState('');
 
-  const createTimer = () => {
-    addTimer({time, title});
+  const createTimer = () => { 
+    addTimer({title, time});
   };
 
 

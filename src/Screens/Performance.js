@@ -1,30 +1,36 @@
 import React, { useState } from "react";
 import { StyleSheet } from 'react-native'
 import { Layout, Text, Button } from "@ui-kitten/components";
-
+import ProgressBar from "react-native-progress/Bar";
 
 import Timer from '../components/Timer';
 import TimerInput from '../components/TimerInput';
 import TimerDisplay from "../components/TimerDisplay";
-import ProgressBar from "../components/ProgressBar";
+
 
 
 const Perfomance = () => {
 	const [isMode, setIsMode] = useState(false);
-	const [timers, setTimers] = useState([{title:'test', time:5}]);
-	const [progression, setProgression] = useState(0);
+	const [timers, setTimers] = useState([{title:'test', time:5}, {title:'yo', time: 5}, {title:'hi', time: 5}]);
 
 	// console.log(timers)
 
-	const showTimerInput =() => {
-		setIsMode(true);
+	// adds up all the added timers 
+	const totalTime = () => {
+		// bug: when new timer is added it is concatnated instead of adding
+		let totalTime = 0;
+		timers.forEach(timer => {
+			console.log(timer)
+			totalTime += timer.time;
+		});
+		return totalTime;
 	};
 
-	const closeInput = () => {
-		setIsMode(false);
-	};
+	const showTimerInput = () => setIsMode(true);
 
-	const AddTimerbtnHandler = timerObj => {
+	const closeInput = () => setIsMode(false);
+
+	const AddTimerBtnHandler = timerObj => {
 		setTimers(curTimers => [
 			...curTimers, 
 			{
@@ -33,7 +39,7 @@ const Perfomance = () => {
 				time: timerObj.time
 			}
 		]);
-		setIsMode(false);
+		closeInput();
 	};
 	
 	
@@ -43,15 +49,25 @@ const Perfomance = () => {
 				{timers.length > 0 ? (
 					<TimerDisplay title={timers[0].title} time={timers[0].time} />
 				) : null}
-				<Text>Time left:</Text>
-				<ProgressBar timeLeft={timers[0].time}/>
+				<Text>Time left: {totalTime()} seconds</Text>
+
+				<ProgressBar 
+					height= {15}
+					width={300}
+					borderRadius={7}
+					animated={true}
+					indeterminate={false}
+					progress={totalTime()}
+					borderColor='black'
+					borderWidth={1.5}
+				/>
 				<Text>How to? </Text>
 				<Layout>
 
 					<TimerInput
 						isVisible={isMode}
 						onCancel={closeInput}
-						addTimer={AddTimerbtnHandler}
+						addTimer={AddTimerBtnHandler}
 					/>
 
 					<Button style={styles.addtimerBtn} onPress={showTimerInput}>
@@ -82,6 +98,6 @@ const styles = StyleSheet.create({
 		width: '40%'
 	},
 	exerciseInfo: {
-
+		//going to be new layout for this component 
 	}
 })

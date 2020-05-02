@@ -1,29 +1,27 @@
 import React, { useState, useEffect, useRef } from "react";
-import { TextInput } from "react-native";
 import { Layout, Text, Button } from "@ui-kitten/components";
 
-import TimerInput from './TimerInput'
 
-const Timer = () => {
-	//takes in mins + seconds
+
+const Timer = ({}) => {
   const [seconds, setSeconds] = useState(null);
   const [isActive, setIsActive] = useState(false);
   const secondsRef = useRef(seconds);
-  // console.log(seconds,isActive, secondsRef);
+  console.log(seconds,isActive, secondsRef);
   
   useEffect(() => {
     let interval;
     if(isActive && seconds > 0){
       interval = setInterval(() => {
-        setSeconds(seconds - 1)
+        setSeconds(seconds - 1);
       },1000);
     } else if(seconds <= 0) {
-      console.log("clearing interval")
-      clearInterval(interval)
+      console.log("clearing interval");
+      clearInterval(interval);
     };
     return () => {
-      console.log("cleanUP")
-      clearInterval(interval)
+      console.log("cleanUP");
+      clearInterval(interval);
     };
   }, [seconds, isActive]);
 
@@ -42,7 +40,7 @@ const Timer = () => {
               : 
             null
           }
-        {secondsRef !== 0 ? <Button onPress={reset}> Reset </Button> : null}
+        {secondsRef.current !== 0 ? <Button onPress={reset}> Reset </Button> : null}
 
 		</Layout>
 	);
