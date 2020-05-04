@@ -11,9 +11,7 @@ import TimerDisplay from "../components/TimerDisplay";
 
 const Perfomance = () => {
 	const [isMode, setIsMode] = useState(false);
-	const [timers, setTimers] = useState([{id:1, title:'test', time:5}, {id:2, title:'yo', time: 4}, {id:3, title:'hi', time: 3}]);
-
-
+	const [timers, setTimers] = useState([{id:1, title:'test', time:2}, {id:3, title:'yo', time: 3}, {id:5, title:'hi', time: 4}]);
 
 	// adds up all the added timers 
 	const totalTime = () => {
@@ -29,14 +27,16 @@ const Perfomance = () => {
 	const closeInput = () => setIsMode(false);
 
 	const dequeueTimer = () => { //setTimers if first attempt fails
-		console.log(timers);
-		let curTimer = timers.shift();
-		console.log(timers, curTimer)
-		return curTimer.time;
+			return timers.forEach((exercise) => {
+				exercise.time
+			})
+
+		console.log(time)
 
 		// a bit lost pick up tomorrow
 	};
 
+	
 	const AddTimerBtnHandler = timerObj => {
 		setTimers(curTimers => [
 			...curTimers, 
@@ -52,15 +52,16 @@ const Perfomance = () => {
 	return (
 		<Layout style={styles.contianer}>
 			<Layout style={styles.exerciseInfo}>
-				{timers.length > 0 ? 
-					<TimerDisplay title={timers[0].title} time={timers[0].time} />
-				 	: 
-				 	null
-				}
+				{timers.length > 0
+					? timers.forEach((t) => {
+							console.log(t), <TimerDisplay title={t.title} time={t.time} />;
+					  })
+					: // <TimerDisplay title={timers[0].title} time={timers[0].time} />
+					  null}
 				<Text>Time left: {totalTime()} seconds</Text>
 
-				<ProgressBar 
-					height= {15}
+				<ProgressBar
+					height={15}
 					width={300}
 					borderRadius={7}
 					animated={true}
@@ -71,7 +72,6 @@ const Perfomance = () => {
 				/>
 				<Text>How to? </Text>
 				<Layout>
-
 					<TimerInput
 						isVisible={isMode}
 						onCancel={closeInput}
@@ -81,14 +81,13 @@ const Perfomance = () => {
 					<Button style={styles.addtimerBtn} onPress={showTimerInput}>
 						Add Timer
 					</Button>
-
 				</Layout>
 			</Layout>
 
 			<Layout>
-				{timers.length > 0 ? //might be able to make in to a function to display
-					<Timer activeTime={dequeueTimer} next={dequeueTimer}/> : null
-				}
+				{timers.length > 0 ? ( //might be able to make in to a function to display
+					<Timer activeTime={dequeueTimer()} />
+				) : null}
 			</Layout>
 		</Layout>
 	);

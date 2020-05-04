@@ -27,7 +27,7 @@ const TimerInput = ({isVisible, onCancel, addTimer}) => {
 					placeholder='time'
 					keyboardType={"numeric"}
 					maxLength={2}
-					value={time}
+					value={time.toString()}
 					onChangeText={(time) => {
 						setTime(time);
 					}}

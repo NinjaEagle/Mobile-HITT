@@ -20,8 +20,9 @@ const Timer = ({activeTime, next}) => {
     } 
     else if(timeRemaining <= 0) {  //might be able to use for set next ref/timer
       console.log("starting next timer");
-      next();
+      // next()
       clearInterval(interval)
+      setTimeRemaining(activeTime);
     };
     return () => {
       console.log("cleanUP");
@@ -38,7 +39,7 @@ const Timer = ({activeTime, next}) => {
     <Layout> 
       <Text>Time remaining: {timeRemaining} </Text>
       {timeRemaining ? 
-        <Button onPress={() => setIsActive(!isActive)}> 
+        <Button onPress={() => {setIsActive(!isActive), startHiit} }> 
           {isActive ? 'Pause' : 'Start'}
         </Button> 
           : 
