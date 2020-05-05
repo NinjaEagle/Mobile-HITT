@@ -1,24 +1,23 @@
-import 'react-native-gesture-handler'
-import React, { useState } from 'react'
-import { ApplicationProvider } from '@ui-kitten/components'
-import { mapping, light as lightTheme } from '@eva-design/eva'
-import Login from './src/screens/Login'
-import Home from './src/screens/Home'
-import AppNavigator from './src/components/AppNavigator'
-import Exercise from './src/screens/Exercise'
+import 'react-native-gesture-handler';
+import React, { useState } from 'react';
+import { ApplicationProvider } from '@ui-kitten/components';
+import { mapping, light as lightTheme } from '@eva-design/eva';
+import Login from './src/screens/Login';
+import Home from './src/screens/Home';
+import AppNavigator from './src/components/AppNavigator';
+import Exercise from './src/screens/Exercise';
 
 const App = (props) => {
-	const [isLoggedin, setisLoggedin] = useState(false)
-	console.log(props)
-	return (
-		<ApplicationProvider mapping={mapping} theme={lightTheme}>
-			<AppNavigator />
-			{/* <Exercise /> */}
-		</ApplicationProvider>
-	)
-}
+  const [isLoggedin, setisLoggedin] = useState(false);
+  return (
+    <ApplicationProvider mapping={mapping} theme={lightTheme}>
+      <AppNavigator />
+      {/* <Exercise /> */}
+    </ApplicationProvider>
+  );
+};
 
-export default App
+export default App;
 
 // import 'react-native-gesture-handler'
 // import React, { useState } from 'react'

@@ -1,107 +1,90 @@
-import React from 'react'
-import { SafeAreaView, Image, View, StyleSheet } from 'react-native'
+import React, { Component } from 'react';
+import { SafeAreaView, Image, View, StyleSheet } from 'react-native';
 import {
-	Card,
-	Divider,
-	Icon,
-	Layout,
-	Text,
-	TopNavigation,
-	TopNavigationAction,
-} from '@ui-kitten/components'
-import { TouchableHighlight } from 'react-native-gesture-handler'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+  Card,
+  Divider,
+  Icon,
+  Layout,
+  Text,
+  TopNavigation,
+  TopNavigationAction,
+} from '@ui-kitten/components';
+import { TouchableHighlight } from 'react-native-gesture-handler';
+// import Video from './Video';
 
-const BackIcon = (props) => <Icon {...props} name='arrow-back' />
+const BackIcon = (props) => <Icon {...props} name="arrow-back" />;
 
 const ExercisesList = [
-	{
-		Exercise: 'Tabata',
-		Image: '',
-		Description: 'Fit into your busy schedule and easy to mix up!',
-	},
-	{
-		Exercise: 'Running',
-		Image: '',
-		Description: 'Sprints',
-	},
-	{
-		Exercise: 'AMRAP',
-		Image: '',
-		Description:
-			'Do as many reps as you can for each exercise! Stay motivated :D',
-	},
-]
+  {
+    name: 'Tabata',
+    image: '',
+    description: 'Fit into your busy schedule and easy to mix up!',
+  },
+  {
+    name: 'Running',
+    image: '',
+    description: 'Sprints',
+  },
+  {
+    name: 'AMRAP',
+    image: '',
+    description: 'Do as many reps as you can for each exercise! Stay motivated :D',
+  },
+];
 
-const Header = (props) => (
-	<View {...props}>
-		<Text category='h6'>Tabata</Text>
-		<Image></Image>
-	</View>
-)
+const Header = (props) =>
+  ExercisesList.map((exercise, idx) => {
+    //   <Card key={idx} {...props}>
+    const { name, description } = exercise;
+    return (
+      <Card key={idx} {...props} onSelect={(index) => props.navigation.navigate()}>
+        <View>
+          <Text category="h6">{name}</Text>
+          <Text category="p1">{description}</Text>
+          <Image></Image>
+        </View>
+      </Card>
+    );
+  });
 
-export const Exercise = ({ navigation }) => {
-	const navigateBack = () => {
-		navigation.goBack()
-	}
+const navigateBack = () => navigation.goBack();
 
-	const BackAction = () => (
-		<TopNavigationAction icon={BackIcon} onPress={navigateBack} />
-	)
+const BackAction = () => <TopNavigationAction icon={BackIcon} onPress={navigateBack} />;
 
-	return (
-		// ScrollViews unlimited items
-		<React.Fragment>
-			<Layout style={styles.topContainer} level='2'>
-				<Card style={styles.card} header={Header}>
-					<Text>HIIT Exercises for you to choose</Text>
-				</Card>
-			</Layout>
+const Exercise = ({ navigation }) => (
+  <React.Fragment>
+    <Layout style={styles.container} level="3">
+      <Card style={styles.card}>
+        <Text category="h3">HIIT Daily Exercises</Text>
+        <Text>Fit into your busy schedule and easy to mix up!</Text>
+      </Card>
+      <Card style={styles.card} header={Header} />
+    </Layout>
+  </React.Fragment>
+);
+export default Exercise;
 
-			<Card style={styles.card} header={Header}>
-				<Text>Fit into your busy schedule and easy to mix up!</Text>
-			</Card>
-		</React.Fragment>
-		// <SafeAreaView style={{ flex: 1 }}>
-		// 	<TopNavigation
-		// 		title='HIIT Mobile App'
-		// 		alignment='center'
-		// 		leftControl={BackAction()}
-		// 	/>
-		// 	<Divider />
-		// 	<Layout
-		// 		style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-		// 		<Text category='h1'>HIIT Exercises</Text>
-		// 	</Layout>
-		// 	<Layout
-		// 		style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-		// 		<Text category='h1'>Tabata</Text>
-		// 		<View style={styles.container}>
-		// 			<Image
-		// 				style={styles.tinyLogo}
-		// 				source={require('../../assets/imgs/running.jpg')}
-		// 			/>
-		// 			<Text category='h1'>Running</Text>
-		// 		</View>
-		// 	</Layout>
-		// 	<Layout
-		// 		style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-		// 		<Text category='h1'>AMRAP (As many rounds as possible)</Text>
-		// 	</Layout>
-		// </SafeAreaView>
-	)
-}
 const styles = StyleSheet.create({
-	container: {
-		paddingTop: 50,
-	},
-	tinyLogo: {
-		width: 50,
-		height: 50,
-	},
-	logo: {
-		width: 66,
-		height: 58,
-	},
-})
-export default Exercise
+  topContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  card: {
+    // flex: 1,
+    margin: 2,
+    flexDirection: 'column',
+  },
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    paddingTop: 50,
+  },
+  tinyLogo: {
+    width: 50,
+    height: 50,
+  },
+  logo: {
+    width: 66,
+    height: 58,
+  },
+});

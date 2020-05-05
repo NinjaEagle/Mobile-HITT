@@ -24,10 +24,10 @@ function LoginForm2() {
         { key: 'email', type: 'email', label: 'Email Address' },
         { key: 'password', type: 'password', label: 'Password' },
       ]}
-      onChange={e => {
+      onChange={(e) => {
         setFieldValues(fields);
       }}
-      onSubmit={values => /* values === { email: "", password: ""} */ console.log(values)}
+      onSubmit={(values) => /* values === { email: "", password: ""} */ console.log(values)}
     />
   );
 }
@@ -36,9 +36,8 @@ function LoginForm() {
   const [user, setUser] = useState('');
   const [pass, setPassword] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(user, pass);
   };
   return (
     <div className="App">
@@ -50,7 +49,7 @@ function LoginForm() {
           name="user"
           type="text"
           value={user}
-          onChange={e => setUser(e.currentTarget.value)}
+          onChange={(e) => setUser(e.currentTarget.value)}
         />
         Password:
         <input
@@ -58,7 +57,7 @@ function LoginForm() {
           name="pass"
           type="password"
           value={pass}
-          onChange={e => setPassword(e.currentTarget.value)}
+          onChange={(e) => setPassword(e.currentTarget.value)}
         />
         <button className="field" id="loginb" type="submit">
           Login{' '}
@@ -72,9 +71,8 @@ function RegisterForm() {
   const [user, setUser] = useState('');
   const [pass, setPassword] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(user, pass);
   };
   return (
     <div className="App">
@@ -86,7 +84,7 @@ function RegisterForm() {
           name="user"
           type="text"
           value={user}
-          onChange={e => setUser(e.currentTarget.value)}
+          onChange={(e) => setUser(e.currentTarget.value)}
         />
         Password:
         <input
@@ -94,14 +92,14 @@ function RegisterForm() {
           name="pass"
           type="password"
           value={pass}
-          onChange={e => setPassword(e.currentTarget.value)}
+          onChange={(e) => setPassword(e.currentTarget.value)}
         />
         <input
           className="field"
           name="confirmpass"
           type="password"
           value={pass}
-          onChange={e => setPassword(e.currentTarget.value)}
+          onChange={(e) => setPassword(e.currentTarget.value)}
         />
         <button className="field" id="loginb" type="submit">
           Login{' '}
