@@ -12,7 +12,7 @@ import {
   Platform,
 } from 'react-native';
 
-ApiClient.init(YOUTUBE_KEY);
+// ApiClient.init(YOUTUBE_KEY);
 
 export default class Video extends Component {
   state = {
@@ -29,42 +29,6 @@ export default class Video extends Component {
     containerWidth: null,
   };
 
-  const styles = StyleSheet.create({
-    container: {
-      backgroundColor: 'white',
-    },
-    welcome: {
-      fontSize: 20,
-      textAlign: 'center',
-      margin: 10,
-    },
-    buttonGroup: {
-      flexDirection: 'row',
-      alignSelf: 'center',
-    },
-    button: {
-      paddingVertical: 4,
-      paddingHorizontal: 8,
-      alignSelf: 'center',
-    },
-    buttonText: {
-      fontSize: 18,
-      color: 'blue',
-    },
-    buttonTextSmall: {
-      fontSize: 15,
-    },
-    instructions: {
-      textAlign: 'center',
-      color: '#333333',
-      marginBottom: 5,
-    },
-    player: {
-      alignSelf: 'stretch',
-      marginVertical: 10,
-    },
-  });
-
   render() {
     return (
       <ScrollView
@@ -78,7 +42,7 @@ export default class Video extends Component {
           if (this.state.containerWidth !== width) this.setState({ containerWidth: width });
         }}
       >
-      {this.state.containerMounted && (
+        {this.state.containerMounted && (
           <YouTube
             ref={(component) => {
               this._youTubeRef = component;
@@ -131,12 +95,46 @@ export default class Video extends Component {
             </Text>
           </TouchableOpacity>
         </View>
-        </ScrollView>
+      </ScrollView>
     );
   }
 }
 
-
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  buttonGroup: {
+    flexDirection: 'row',
+    alignSelf: 'center',
+  },
+  button: {
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    alignSelf: 'center',
+  },
+  buttonText: {
+    fontSize: 18,
+    color: 'blue',
+  },
+  buttonTextSmall: {
+    fontSize: 15,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+  player: {
+    alignSelf: 'stretch',
+    marginVertical: 10,
+  },
+});
 
 //
 
