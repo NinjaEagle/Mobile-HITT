@@ -3,16 +3,13 @@ import React, { useState } from 'react';
 import { ApplicationProvider } from '@ui-kitten/components';
 import { mapping, light as lightTheme } from '@eva-design/eva';
 import Login from './src/screens/Login';
-import Home from './src/screens/Home';
 import AppNavigator from './src/components/AppNavigator';
-import Video from './src/screens/Video';
 
 const App = (props) => {
   const [isLoggedin, setisLoggedin] = useState(false);
   return (
     <ApplicationProvider mapping={mapping} theme={lightTheme}>
       <AppNavigator />
-      {/* <Video /> */}
     </ApplicationProvider>
   );
 };
