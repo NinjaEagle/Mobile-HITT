@@ -11,8 +11,8 @@ const App = (props) => {
   const [isLoggedin, setisLoggedin] = useState(false);
   return (
     <ApplicationProvider mapping={mapping} theme={lightTheme}>
-      {/* <AppNavigator /> */}
-      <Video />
+      <AppNavigator />
+      {/* <Video /> */}
     </ApplicationProvider>
   );
 };

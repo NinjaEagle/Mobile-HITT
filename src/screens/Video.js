@@ -32,6 +32,7 @@ export default class Video extends Component {
     fullscreen: false,
     containerMounted: false,
     containerWidth: null,
+    data: [],
   };
   _youTubeRef = React.createRef();
 
@@ -41,13 +42,13 @@ export default class Video extends Component {
     )
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
+        // console.log(res);
 
-        // const videoId = [];
-        // res.items.forEach((item) => {
-        //   videoId.push(item);
-        // });
-        // this.setState({ data: videoId });
+        const videoId = [];
+        res.items.forEach((item) => {
+          videoId.push(item);
+        });
+        this.setState({ data: videoId });
       })
       .catch((err) => {
         console.log(err);
@@ -55,6 +56,8 @@ export default class Video extends Component {
   }
 
   render() {
+    console.log(this.state);
+    const { navigate } = this.props.navigation;
     return (
       <ScrollView
         style={styles.container}
@@ -67,42 +70,42 @@ export default class Video extends Component {
           if (this.state.containerWidth !== width) this.setState({ containerWidth: width });
         }}
       >
-        {this.state.containerMounted && (
-          <YouTube
-            ref={(component) => {
-              this._youTubeRef = component;
-            }}
-            apiKey={apiKey}
-            // Un-comment one of videoId / videoIds / playlist.
-            // You can also edit these props while Hot-Loading in development mode to see how
-            // it affects the loaded native module
-            videoId=""
-            play={this.state.isPlaying}
-            loop={this.state.isLooping}
-            fullscreen={this.state.fullscreen}
-            controls={1}
-            style={[
-              {
-                height: PixelRatio.roundToNearestPixel(this.state.containerWidth / (16 / 9)),
-              },
-              styles.player,
-            ]}
-            onError={(e) => this.setState({ error: e.error })}
-            onReady={(e) => this.setState({ isReady: true })}
-            onChangeState={(e) => this.setState({ status: e.state })}
-            onChangeQuality={(e) => this.setState({ quality: e.quality })}
-            onChangeFullscreen={(e) => this.setState({ fullscreen: e.isFullscreen })}
-            onProgress={(e) =>
-              this.setState({
-                duration: e.duration,
-                currentTime: e.currentTime,
-              })
-            }
-          />
-        )}
+        {/* {this.state.containerMounted && ( */}
+        {/* <YouTube
+          ref={(component) => {
+            this._youTubeRef = component;
+          }}
+          apiKey={apiKey}
+          // Un-comment one of videoId / videoIds / playlist.
+          // You can also edit these props while Hot-Loading in development mode to see how
+          // it affects the loaded native module
+          videoId=""
+          play={this.state.isPlaying}
+          loop={this.state.isLooping}
+          fullscreen={this.state.fullscreen}
+          controls={1}
+          style={[
+            {
+              height: PixelRatio.roundToNearestPixel(this.state.containerWidth / (16 / 9)),
+            },
+            styles.player,
+          ]}
+          onError={(e) => this.setState({ error: e.error })}
+          onReady={(e) => this.setState({ isReady: true })}
+          onChangeState={(e) => this.setState({ status: e.state })}
+          onChangeQuality={(e) => this.setState({ quality: e.quality })}
+          onChangeFullscreen={(e) => this.setState({ fullscreen: e.isFullscreen })}
+          onProgress={(e) =>
+            this.setState({
+              duration: e.duration,
+              currentTime: e.currentTime,
+            })
+          }
+        /> */}
+        {/* )} */}
 
         {/* Playing / Looping */}
-        {/* <View style={styles.buttonGroup}>
+        <View style={styles.buttonGroup}>
           <Button
             title={this.state.status == 'playing' ? 'Pause' : 'Play'}
             style={styles.button}
@@ -116,7 +119,7 @@ export default class Video extends Component {
             onPress={() => this.setState((s) => ({ isLooping: !s.isLooping }))}
           />
           <Text style={styles.buttonText}>{this.state.isLooping ? 'Looping' : 'Not Looping'}</Text>
-        </View> */}
+        </View>
       </ScrollView>
     );
   }
@@ -125,6 +128,9 @@ export default class Video extends Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
+    flex: 1,
+    flexDirection: 'column',
+    paddingTop: 50,
   },
   welcome: {
     fontSize: 20,

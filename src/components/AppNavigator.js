@@ -4,6 +4,7 @@ import Home from '../screens/Home';
 import Performance from '../screens/Performance';
 import Profile from '../screens/Profile';
 import Exercise from '../screens/Exercise';
+import Video from '../screens/Video';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigation, BottomNavigationTab, Layout, Text } from '@ui-kitten/components';
 
@@ -18,6 +19,7 @@ const NavBar = ({ navigation, state, props }) => {
       <BottomNavigationTab title="Home" />
       <BottomNavigationTab title="Workouts" />
       {/* <BottomNavigationTab title='Performance' /> */}
+      <BottomNavigationTab title="Video" />
       <BottomNavigationTab title="Profile" />
     </BottomNavigation>
   );
@@ -27,6 +29,7 @@ const TabNavigator = () => (
   <Navigator tabBar={(props) => <NavBar {...props} />}>
     <Screen name="Home" component={Home} />
     <Screen name="Workouts" component={Exercise} />
+    <Screen name="Video" component={Video} />
     {/* <Screen name='Performance' component={Performance} /> */}
     <Screen name="Profile" component={Profile} />
   </Navigator>
