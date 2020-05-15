@@ -8,11 +8,16 @@ import {
   ScrollView,
   TouchableOpacity,
   PixelRatio,
+  Button,
   Dimensions,
   Platform,
 } from 'react-native';
+// import Icon from 'react-native-icons/MaterialIcons';
 
 // ApiClient.init(YOUTUBE_KEY);
+const apiKey = YOUTUBE_KEY;
+const channelId = 'UCqjwF8rxRsotnojGl4gM0Zw';
+const results = 10;
 
 export default class Video extends Component {
   state = {
@@ -28,6 +33,26 @@ export default class Video extends Component {
     containerMounted: false,
     containerWidth: null,
   };
+  _youTubeRef = React.createRef();
+
+  componentDidMount() {
+    fetch(
+      `https://www.googleapis.com/youtube/v3/search/?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${results}`,
+    )
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+
+        // const videoId = [];
+        // res.items.forEach((item) => {
+        //   videoId.push(item);
+        // });
+        // this.setState({ data: videoId });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 
   render() {
     return (
@@ -47,7 +72,7 @@ export default class Video extends Component {
             ref={(component) => {
               this._youTubeRef = component;
             }}
-            apiKey={YOUTUBE_KEY}
+            apiKey={apiKey}
             // Un-comment one of videoId / videoIds / playlist.
             // You can also edit these props while Hot-Loading in development mode to see how
             // it affects the loaded native module
@@ -77,24 +102,21 @@ export default class Video extends Component {
         )}
 
         {/* Playing / Looping */}
-        <View style={styles.buttonGroup}>
-          <TouchableOpacity
+        {/* <View style={styles.buttonGroup}>
+          <Button
+            title={this.state.status == 'playing' ? 'Pause' : 'Play'}
             style={styles.button}
             onPress={() => this.setState((s) => ({ isPlaying: !s.isPlaying }))}
-          >
-            <Text style={styles.buttonText}>
-              {this.state.status == 'playing' ? 'Pause' : 'Play'}
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+            color={this.state.status == 'playing' ? 'red' : undefined}
+          />
+          <Text style={styles.buttonText}>{this.state.status == 'playing' ? 'Pause' : 'Play'}</Text>
+          <Button
+            title={this.state.isLooping ? 'Looping' : 'Not Looping'}
             style={styles.button}
             onPress={() => this.setState((s) => ({ isLooping: !s.isLooping }))}
-          >
-            <Text style={styles.buttonText}>
-              {this.state.isLooping ? 'Looping' : 'Not Looping'}
-            </Text>
-          </TouchableOpacity>
-        </View>
+          />
+          <Text style={styles.buttonText}>{this.state.isLooping ? 'Looping' : 'Not Looping'}</Text>
+        </View> */}
       </ScrollView>
     );
   }
