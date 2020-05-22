@@ -1,57 +1,51 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, TextInput } from 'react-native';
 import { Layout, Text, Button } from '@ui-kitten/components';
 
-const Timer = () => {
-  //takes in mins + seconds
-  const [seconds, setSeconds] = useState(0);
+const Timer = ({ activeTime, next }) => {
+  const [timeRemaining, setTimeRemaining] = useState(activeTime);
   const [isActive, setIsActive] = useState(false);
-  const secondsRef = useRef(seconds);
+  const timeRef = useRef(activeTime);
 
+  console.log(isActive, timeRef, timeRemaining);
+
+  //countdown from timeRemaining
   useEffect(() => {
     let interval;
-    if (isActive && seconds > 0) {
+    if (isActive && timeRemaining > 0) {
       interval = setInterval(() => {
-        setSeconds(seconds - 1);
+        setTimeRemaining(timeRemaining - 1);
       }, 1000);
-    } else if (seconds <= 0) {
-      console.log('clearing interval');
+    } else if (timeRemaining <= 0) {
+      //might be able to use for set next ref/timer
+      console.log('starting next timer');
+      // next()
       clearInterval(interval);
+      setTimeRemaining(activeTime);
     }
     return () => {
       console.log('cleanUP');
       clearInterval(interval);
     };
-  }, [seconds, isActive]);
+  }, [timeRemaining, isActive]);
 
-  const resetTime = () => {};
+  const reset = () => {
+    setTimeRemaining(timeRef.current);
+    setIsActive(false);
+  };
 
   return (
     <Layout>
-      <View>
-        <TextInput
-          placeholder="seconds"
-          keyboardType={'numeric'}
-          maxLength={2}
-          value={seconds}
-          onChangeText={(seconds) => {
-            setSeconds(seconds);
-            secondsRef.current = seconds;
+      <Text>Time remaining: {timeRemaining} </Text>
+      {timeRemaining ? (
+        <Button
+          onPress={() => {
+            setIsActive(!isActive), startHiit;
           }}
-          autoFocus
-        />
-        <Text>Timer</Text>
-        <View>
-          <Text>Time remaining: {seconds} </Text>
-
-          {seconds ? (
-            <Button onPress={() => setIsActive(!isActive)}>{isActive ? 'Pause' : 'Start'}</Button>
-          ) : null}
-          {secondsRef ? (
-            <Button onPress={() => setSeconds(secondsRef.current)}>Reset</Button>
-          ) : null}
-        </View>
-      </View>
+        >
+          {isActive ? 'Pause' : 'Start'}
+        </Button>
+      ) : null}
+      {timeRef.current ? <Button onPress={reset}> Reset </Button> : null}
     </Layout>
   );
 };

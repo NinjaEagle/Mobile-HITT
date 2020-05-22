@@ -18,8 +18,8 @@ const NavBar = ({ navigation, state, props }) => {
     >
       <BottomNavigationTab title="Home" />
       <BottomNavigationTab title="Workouts" />
-      {/* <BottomNavigationTab title='Performance' /> */}
       <BottomNavigationTab title="Video" />
+      <BottomNavigationTab title="Performance" />
       <BottomNavigationTab title="Profile" />
     </BottomNavigation>
   );
@@ -30,7 +30,7 @@ const TabNavigator = () => (
     <Screen name="Home" component={Home} />
     <Screen name="Workouts" component={Exercise} />
     <Screen name="Video" component={Video} />
-    {/* <Screen name='Performance' component={Performance} /> */}
+    <Screen name="Performance" component={Performance} />
     <Screen name="Profile" component={Profile} />
   </Navigator>
 );

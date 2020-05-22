@@ -40,6 +40,8 @@ target 'mobilehitt' do
 
   pod 'RCTYouTube', :path => '../node_modules/react-native-youtube'
 
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
   target 'mobilehittTests' do
     inherit! :search_paths
     # Pods for testing
