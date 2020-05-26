@@ -11,13 +11,13 @@ import TimerDisplay from "../components/TimerDisplay";
 
 const Perfomance = () => {
 	const [isMode, setIsMode] = useState(false);
-	const [timers, setTimers] = useState([{id:1, title:'test', time:2}, {id:3, title:'yo', time: 3}, {id:5, title:'hi', time: 4}]);
+	const [exercises, setExercise] = useState([{id:1, title:'test', time:2}, {id:3, title:'yo', time: 3}, {id:5, title:'hi', time: 4}]);
 
-	// adds up all the added timers 
+	// adds up all the added exercises 
 	const totalTime = () => {
 		let totalTime = 0;
-		timers.forEach(timer => {
-			totalTime += parseInt(timer.time);
+		exercises.forEach(obj => {
+			totalTime += parseInt(obj.time);
 		});
 		return totalTime;
 	};
@@ -26,19 +26,17 @@ const Perfomance = () => {
 
 	const closeInput = () => setIsMode(false);
 
-	const dequeueTimer = () => { //setTimers if first attempt fails
-			return timers.forEach((exercise) => {
-				exercise.time
-			})
-
-		console.log(time)
-
-		// a bit lost pick up tomorrow
+	const dequeueTimer = () => { //setExercise if first attempt fails
+		return exercises.map((exercise) => {
+			// console.log('deque:',exercise);
+			leTime = exercise.time;
+			return leTime;
+		});
 	};
 
 	
 	const AddTimerBtnHandler = timerObj => {
-		setTimers(curTimers => [
+		setExercise(curTimers => [
 			...curTimers, 
 			{
 				id: Math.random().toString(),
@@ -48,16 +46,13 @@ const Perfomance = () => {
 		]);
 		closeInput();
 	};
-	
+	console.log(dequeueTimer());
 	return (
 		<Layout style={styles.contianer}>
 			<Layout style={styles.exerciseInfo}>
-				{timers.length > 0
-					? timers.forEach((t) => {
-							console.log(t), <TimerDisplay title={t.title} time={t.time} />;
-					  })
-					: // <TimerDisplay title={timers[0].title} time={timers[0].time} />
-					  null}
+				{exercises.length > 0 ? (
+					<TimerDisplay title={exercises[0].title} time={exercises[0].time} />
+				) : null}
 				<Text>Time left: {totalTime()} seconds</Text>
 
 				<ProgressBar
@@ -84,10 +79,9 @@ const Perfomance = () => {
 				</Layout>
 			</Layout>
 
+			{/* // might be able to make in to a function to display */}
 			<Layout>
-				{timers.length > 0 ? ( //might be able to make in to a function to display
-					<Timer activeTime={dequeueTimer()} />
-				) : null}
+				{exercises.length ? <Timer activeTime={dequeueTimer()} /> : null}
 			</Layout>
 		</Layout>
 	);

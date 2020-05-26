@@ -3,17 +3,19 @@ import { Layout, Text, Button } from "@ui-kitten/components";
 
 
 
-const Timer = ({activeTime, next}) => {
-  const [timeRemaining, setTimeRemaining] = useState(activeTime);
+const Timer = ({activeTime}) => {
+  const [timeRemaining, setTimeRemaining] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const timeRef = useRef(activeTime);
 
-  console.log(isActive, timeRef, timeRemaining);
+  console.log(isActive, timeRef, timeRemaining, activeTime);
   
   //countdown from timeRemaining
+
   useEffect(() => {
     let interval;
-    if(isActive && timeRemaining > 0){
+    setTimeRemaining(activeTime[0]);
+    if(isActive && !timeRemaining){
       interval = setInterval(() => {
         setTimeRemaining(timeRemaining - 1);
       },1000);
@@ -22,7 +24,7 @@ const Timer = ({activeTime, next}) => {
       console.log("starting next timer");
       // next()
       clearInterval(interval)
-      setTimeRemaining(activeTime);
+      setTimeRemaining(activeTime); // logic error? 
     };
     return () => {
       console.log("cleanUP");
@@ -39,7 +41,7 @@ const Timer = ({activeTime, next}) => {
     <Layout> 
       <Text>Time remaining: {timeRemaining} </Text>
       {timeRemaining ? 
-        <Button onPress={() => {setIsActive(!isActive), startHiit} }> 
+        <Button onPress={() => {setIsActive(!isActive)} }> 
           {isActive ? 'Pause' : 'Start'}
         </Button> 
           : 
