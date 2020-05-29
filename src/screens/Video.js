@@ -1,6 +1,7 @@
 import { YOUTUBE_KEY } from 'react-native-dotenv';
 import React, { Component } from 'react';
 import { WebView } from 'react-native-webview';
+import { TopNavigation } from '@ui-kitten/components';
 // import YouTube, { YouTubeStandaloneIOS, YouTubeStandaloneAndroid } from 'react-native-youtube';
 import {
   StyleSheet,
@@ -64,11 +65,17 @@ export default class Video extends Component {
     }
   };
 
+  navigateBack = () => navigation.goBack();
+
+  BackAction = () => <TopNavigationAction icon={BackIcon} onPress={navigateBack} />;
+
   render() {
     console.log(this.state);
     const { navigate } = this.props.navigation;
+
     return (
       <View style={styles.container}>
+        <TopNavigation title="Exercise" alignment="center" leftControl={this.BackAction} />
         {/* Jump Squat https://www.youtube.com/watch?v=0LGJZqKfpXs */}
         <Text>1. Jump Squat</Text>
         <WebView
@@ -117,7 +124,8 @@ export default class Video extends Component {
           onNavigationStateChange={this.onShouldStartLoadWithRequest} //for Android
         />
       </View>
-      //  <iframe
+
+      //<iframe
       //   width="560"
       //   height="315"
       //   src="https://www.youtube.com/embed/XIeCMhNWFQQ"
