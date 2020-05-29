@@ -11,9 +11,9 @@ import TimerDisplay from "../components/TimerDisplay";
 
 const Perfomance = () => {
 	const [isMode, setIsMode] = useState(false);
-	const [exercises, setExercise] = useState([{id:1, title:'test', time:2}, {id:3, title:'yo', time: 3}, {id:5, title:'hi', time: 4}]);
-
-	// adds up all the added exercises 
+	const [exercises, setExercise] = useState([{id:1, title:'test', time:3}, {id:3, title:'sprint', time: 3}, {id:2, title:'legs', time: 4}]);
+	
+	// adds up the time in tabata exercises
 	const totalTime = () => {
 		let totalTime = 0;
 		exercises.forEach(obj => {
@@ -26,13 +26,25 @@ const Perfomance = () => {
 
 	const closeInput = () => setIsMode(false);
 
-	const dequeueTimer = () => { //setExercise if first attempt fails
-		return exercises.map((exercise) => {
-			// console.log('deque:',exercise);
-			leTime = exercise.time;
-			return leTime;
-		});
-	};
+	// async function timer(count) {
+	// 	console.log('In async:',count);
+	// 	return new Promise((resolve) => {
+	// 		let intervalID = setInterval(() => {
+	// 			count = count - 1;
+	// 			if (count < 0) return resolve(), clearInterval(intervalID);
+	// 			console.log(count);
+	// 		}, 1000);
+	// 	});
+	// }
+
+	// const cycleTimer = () => { 
+	// 	let leTime;
+	// 	exercises.forEach(async (exercise) => {
+	// 		leTime = exercise.time;
+	// 		// await timer(leTime);
+	// 	});
+	// 	return <Timer activeTime={leTime} />
+	// };
 
 	
 	const AddTimerBtnHandler = timerObj => {
@@ -46,7 +58,6 @@ const Perfomance = () => {
 		]);
 		closeInput();
 	};
-	console.log(dequeueTimer());
 	return (
 		<Layout style={styles.contianer}>
 			<Layout style={styles.exerciseInfo}>
@@ -81,7 +92,8 @@ const Perfomance = () => {
 
 			{/* // might be able to make in to a function to display */}
 			<Layout>
-				{exercises.length ? <Timer activeTime={dequeueTimer()} /> : null}
+				{/* {exercises.length ? cycleTimer() : null} */}
+				{exercises.length ? <Timer exercisesArr={exercises} /> : null}
 			</Layout>
 		</Layout>
 	);
