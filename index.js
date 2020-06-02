@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppRegistry } from 'react-native';
 import { name as mobilehitt } from './app.json';
 import App from './App';

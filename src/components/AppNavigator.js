@@ -7,8 +7,13 @@ import Exercise from '../screens/Exercise';
 import Video from '../screens/Video';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigation, BottomNavigationTab, Layout, Text } from '@ui-kitten/components';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createSwitchNavigator } from 'react-navigation';
+import SplashScreen from '../screens/SplashScreen';
 
 const { Navigator, Screen } = createBottomTabNavigator();
+
+const { Stack } = createStackNavigator();
 
 const NavBar = ({ navigation, state, props }) => {
   return (
@@ -25,7 +30,27 @@ const NavBar = ({ navigation, state, props }) => {
   );
 };
 
-const TabNavigator = () => (
+const AuthNavigator = (): React.ReactElement => (
+  <Stack.Navigator headerMode="none">
+    <Stack.Screen name="LogIn" component={LogIn} />
+    <Stack.Screen name="SignUp" />
+    <Stack.Screen name="Reset" />
+  </Stack.Navigator>
+);
+// const AuthNavigator = createStackNavigator(
+//   {
+//     Login: {
+//       getScreen: () => require('../screens/Login').default,
+//     },
+//   },
+//   {
+//     navigationOptions: {
+//       header: null,
+//     },
+//   },
+// );
+
+const MainNavigator = () => (
   <Navigator tabBar={(props) => <NavBar {...props} />}>
     <Screen name="Home" component={Home} />
     <Screen name="Workouts" component={Exercise} />
@@ -33,6 +58,19 @@ const TabNavigator = () => (
     <Screen name="Performance" component={Performance} />
     <Screen name="Profile" component={Profile} />
   </Navigator>
+);
+
+const TabNavigator = createSwitchNavigator(
+  {
+    Splash: {
+      getScreen: () => require('../screens/SplashScreen').default,
+    },
+    Auth: AuthNavigator,
+    Main: MainNavigator,
+  },
+  {
+    intialRouteName: 'Splash',
+  },
 );
 
 const AppNavigator = () => (

@@ -1,18 +1,24 @@
 import React, { useState, Component } from 'react';
-import { SafeAreaView, StyleSheet, ScrollView, View, Text, ImageBackground } from 'react-native';
+import { Animated, StyleSheet, View } from 'react-native';
 import { Layout, Button } from '@ui-kitten/components';
-import { TouchableOpacity, Image } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { hitt } from '../../assets/img/hitt.jpg';
+import OnboardingLogo from '../commons/OnboardingLogo';
+import LoginButton from '../commons/LoginButton';
 
+const BoxAnimated = Animated.createAnimatedComponent(View);
 class Login extends Component {
   // const [userName, setUserName] = useState('');
   // const [password, setPassword] = useState('');
   state = {
     opacity: new Animated.Value(0),
     position: new Animated.Value(0),
+    signedIn: false,
+    name: '',
+    photoUrl: '',
   };
+
   componentDidMount() {
     Animated.parallel([this.positionAnim(), this.opacityAnim()]).start();
   }
@@ -34,6 +40,15 @@ class Login extends Component {
   onGooglePress = async () => {
     try {
       const token = await GoogleApi.loginAsync();
+      if (result.type === 'success') {
+        this.setState({
+          signedIn: true,
+          name: result.user.name,
+          photoUrl: result.user.photoUrl,
+        });
+      } else {
+        console.log('cancelled');
+      }
       console.log(token);
     } catch (error) {
       console.log('error', error);
@@ -48,6 +63,14 @@ class Login extends Component {
     }
   };
 
+  LoginPage = (props) => {
+    return (
+      <View>
+        <Text style={styles.header}>Sign In With Google</Text>
+        <Button title="Sign in with Google" onPress={() => props.signIn()} />
+      </View>
+    );
+  };
   render() {
     const { opacity } = this.state;
     const logoTranslate = this.state.position.interpolate({
@@ -55,23 +78,23 @@ class Login extends Component {
       outputRange: [150, 0],
     });
     return (
-      <Box f={1} center bg="white">
+      <View style={styles.container}>
         <BoxAnimated style={{ flex: 1, transform: [{ translateY: logoTranslate }] }}>
-          <Box f={1} center>
+          <View>
             <OnboardingLogo />
-          </Box>
+          </View>
         </BoxAnimated>
 
         <BoxAnimated style={{ flex: 0.9, width: '100%', opacity }}>
           <LoginButton children="Continue with Google" onPress={this.onGooglePress} type="google" />
-          {/* <LoginButton type='google'>Continue with Google</LoginButton> */}
-          <LoginButton
+          <LoginButton type="google">Continue with Google</LoginButton>
+          {/* <LoginButton
             children="Continue with Facebook"
             onPress={this.onFacebookPress}
             type="facebook"
-          />
+          /> */}
         </BoxAnimated>
-      </Box>
+      </View>
       // <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
       //   <Layout style={styles.sectionContainer}>
       //     <ImageBackground style={styles.backgroundImage} source={hitt}>
@@ -98,6 +121,13 @@ class Login extends Component {
 
 //////////////////////Style Sheets//////////////////////////
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'rgba(26, 193, 245, 0.49)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 50,
+  },
   scrollView: {
     backgroundColor: Colors.lighter,
   },
@@ -108,13 +138,13 @@ const styles = StyleSheet.create({
     height: 790,
     backgroundColor: 'transparent',
   },
-  heading: {
-    top: -170,
-    fontSize: 40,
-    fontWeight: '800',
-    // fontFamily: "lato",
-    color: 'white',
-  },
+  // heading: {
+  //   top: -170,
+  //   fontSize: 40,
+  //   fontWeight: '800',
+  //   // fontFamily: "lato",
+  //   color: 'white',
+  // },
   button: {
     width: '50%',
     textAlign: 'center',
@@ -137,6 +167,17 @@ const styles = StyleSheet.create({
   sectionContainer: {
     display: 'flex',
     backgroundColor: 'rgba(26, 193, 245, 0.49)',
+  },
+  header: {
+    fontSize: 25,
+  },
+  image: {
+    marginTop: 15,
+    width: 150,
+    height: 150,
+    borderColor: 'rgba(0,0,0,0.2)',
+    borderWidth: 3,
+    borderRadius: 150,
   },
 });
 

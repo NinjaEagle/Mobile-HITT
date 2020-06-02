@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Box, Text } from 'react-native-design-utility';
 import OnboardingLogo from '../commons/OnboardingLogo';
+import { Text, View, StyleSheet, Image } from 'react-native';
+import { Constants } from 'expo';
 class SplashScreen extends Component {
   state = {};
 
@@ -16,11 +17,33 @@ class SplashScreen extends Component {
 
   render() {
     return (
-      <Box f={1} center>
-        <OnboardingLogo />
-      </Box>
+      <View style={styles.container}>
+        <View style={styles.rectangle}>
+          <OnboardingLogo />
+        </View>
+      </View>
     );
   }
 }
 
 export default SplashScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    // paddingTop: Constants.statusBarHeight,
+    backgroundColor: '#ecf0f1',
+    padding: 8,
+    position: 'relative',
+  },
+  rectangle: {
+    height: 128,
+    width: 128,
+    backgroundColor: 'salmon',
+    position: 'absolute',
+    zIndex: 99,
+    top: '50%',
+    left: '40%',
+  },
+});

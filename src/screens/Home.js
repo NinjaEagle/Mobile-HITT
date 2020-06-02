@@ -24,7 +24,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Layout style={styles.home} />
       <SafeAreaView>
-        <TopNavigation title="Mobile HIIT" alignment="center" />
+        <TopNavigation alignment="center" />
         <Divider />
         <Layout>{/* <Timer /> */}</Layout>
         <Layout>
