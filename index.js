@@ -1,6 +1,6 @@
-
-import {AppRegistry} from 'react-native';
+import React from 'react';
+import { AppRegistry } from 'react-native';
+import { name as mobilehitt } from './app.json';
 import App from './App';
-import {name as mobilehitt} from './app.json';
 
 AppRegistry.registerComponent(mobilehitt, () => App);

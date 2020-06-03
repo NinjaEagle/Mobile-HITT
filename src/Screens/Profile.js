@@ -1,15 +1,7 @@
-import React from "react";
-import { View, Text } from "react-native";
-
+import React from 'react';
+import { View, Text } from 'react-native';
 
 const Profile = () => {
-	return (
-		<>
-		<View>
-			<Text>Profile Page</Text>
-		</View>
-
-		</>
-	);
+  return <View></View>;
 };
 export default Profile;

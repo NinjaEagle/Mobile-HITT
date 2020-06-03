@@ -1,4 +1,29 @@
 {
-  "name": 'mobilehitt',
-  "displayName": 'mobilehitt'
+  "expo": {
+    "name": "HittMobileApp",
+    "slug": "HittMobileApp",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "extra": {
+      "googleAppId": {
+        "ios": "130707628723-oaag2hojvvp27lro7jcm4v1t18f48fqt.apps.googleusercontent.com",
+        "android": "130707628723-p82jvpbge092kqae9gnelpk55uvt5vsq.apps.googleusercontent.com"
+      }
+    }
+  }
 }
