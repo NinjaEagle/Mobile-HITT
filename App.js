@@ -35,7 +35,8 @@ export default class App extends React.Component {
       return (
         <View f={1} center bg="white">
           <ActivityIndicator size="large" />
-          <Login />
+          {/* <Login /> */}
+          <View><Text>Hello</Text> </View>
         </View>
       );
     }
