@@ -4,24 +4,44 @@ import { images } from '../constants/images';
 import { Image, View, Text, StyleSheet } from 'react-native';
 
 const OnboardingLogo = () => (
-  <View center>
+  <View co>
     <View mb="sm">
       <Image source={images.logo} />
     </View>
     <View>
-      <Text size="2x1">
+      <Text style={styles.text}>
         HITT
-        <Text color="green" size="2x1">
-          Mobile
-        </Text>
+        <Text style={styles.greenTxt}>Mobile</Text>
       </Text>
     </View>
-    <Text size="sm">Staying fit with an easy start</Text>
+    <Text style={styles.text}>Stay fit everyday</Text>
   </View>
 );
 
 export default OnboardingLogo;
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'column',
+    textAlign: 'center',
+    paddingTop: 50,
+  },
+  card: {
+    margin: 2,
+    flexDirection: 'column',
+  },
+  greenTxt: {
+    fontSize: 25,
+    color: 'green',
+  },
+  image: {
+    marginTop: 15,
+    width: 150,
+    height: 150,
+  },
+  text: {
+    fontSize: 25,
+  },
 });

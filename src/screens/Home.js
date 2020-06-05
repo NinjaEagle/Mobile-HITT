@@ -16,7 +16,8 @@ import Exercise from '../screens/Exercise';
 
 // import { MonoText } from '../components/StyledText'
 
-export default function HomeScreen() {
+const HomeScreen = (props) => {
+  console.log(props);
   const navigateExercises = () => {
     navigation.navigate('Exercise');
   };
@@ -26,50 +27,28 @@ export default function HomeScreen() {
       <SafeAreaView>
         <TopNavigation alignment="center" />
         <Divider />
-        <Layout>{/* <Timer /> */}</Layout>
+        <View>
+          <Text style={styles.header}>Welcome:{props.name}</Text>
+          <Image style={styles.image} source={{ uri: props.photoUrl }} />
+        </View>
+        <Layout>
+          <Timer />
+        </Layout>
         <Layout>
           <Button onPress={navigateExercises}>OPEN EXERCISES</Button>
         </Layout>
       </SafeAreaView>
     </View>
   );
-}
+};
+export default HomeScreen;
 
 HomeScreen.navigationOptions = {
   header: null,
 };
 
-// function DevelopmentModeNotice() {
-//   if (__DEV__) {
-//     const learnMoreButton = (
-//       <Text onPress={handleLearnMorePress} style={styles.helpLinkText}>
-//         Learn more
-//       </Text>
-//     );
-
-//     return (
-//       <Text style={styles.developmentModeText}>
-//         Development mode is enabled: your app will be slower but you can use useful development
-//         tools. {learnMoreButton}
-//       </Text>
-//     );
-//   } else {
-//     return (
-//       <Text style={styles.developmentModeText}>
-//         You are not in development mode: your app will run at full speed.
-//       </Text>
-//     );
-//   }
-// }
-
 function handleLearnMorePress() {
   WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/workflow/development-mode/');
-}
-
-function handleHelpPress() {
-  WebBrowser.openBrowserAsync(
-    'https://docs.expo.io/versions/latest/get-started/create-a-new-app/#making-your-first-change',
-  );
 }
 
 const styles = StyleSheet.create({
@@ -78,25 +57,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'rgba(26, 245, 192, 0.49);',
   },
-
-  tabBarInfoContainer: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    ...Platform.select({
-      ios: {
-        shadowColor: 'black',
-        shadowOffset: { width: 0, height: -3 },
-        shadowOpacity: 0.1,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 20,
-      },
-    }),
-    alignItems: 'center',
-    backgroundColor: '#fbfbfb',
-    paddingVertical: 20,
+  header: {
+    fontSize: 25,
+  },
+  image: {
+    marginTop: 15,
+    width: 150,
+    height: 150,
+    borderColor: 'rgba(0,0,0,0.2)',
+    borderWidth: 3,
+    borderRadius: 150,
   },
 });

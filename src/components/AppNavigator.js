@@ -30,13 +30,23 @@ const NavBar = ({ navigation, state, props }) => {
   );
 };
 
-const AuthNavigator = (): React.ReactElement => (
-  <Stack.Navigator headerMode="none">
-    <Stack.Screen name="LogIn" component={LogIn} />
-    <Stack.Screen name="SignUp" />
-    <Stack.Screen name="Reset" />
-  </Stack.Navigator>
+const TabNavigator = () => (
+  <Navigator tabBar={(props) => <NavBar {...props} />}>
+    <Screen name="Home" component={Home} />
+    <Screen name="Workouts" component={Exercise} />
+    <Screen name="Video" component={Video} />
+    <Screen name="Performance" component={Performance} />
+    <Screen name="Profile" component={Profile} />
+  </Navigator>
 );
+
+const AppNavigator = () => (
+  <NavigationContainer>
+    <TabNavigator />
+  </NavigationContainer>
+);
+export default AppNavigator;
+
 // const AuthNavigator = createStackNavigator(
 //   {
 //     Login: {
@@ -50,32 +60,15 @@ const AuthNavigator = (): React.ReactElement => (
 //   },
 // );
 
-const MainNavigator = () => (
-  <Navigator tabBar={(props) => <NavBar {...props} />}>
-    <Screen name="Home" component={Home} />
-    <Screen name="Workouts" component={Exercise} />
-    <Screen name="Video" component={Video} />
-    <Screen name="Performance" component={Performance} />
-    <Screen name="Profile" component={Profile} />
-  </Navigator>
-);
-
-const TabNavigator = createSwitchNavigator(
-  {
-    Splash: {
-      getScreen: () => require('../screens/SplashScreen').default,
-    },
-    Auth: AuthNavigator,
-    Main: MainNavigator,
-  },
-  {
-    intialRouteName: 'Splash',
-  },
-);
-
-const AppNavigator = () => (
-  <NavigationContainer>
-    <TabNavigator />
-  </NavigationContainer>
-);
-export default AppNavigator;
+// const TabNavigator = createSwitchNavigator(
+//   {
+//     Splash: {
+//       getScreen: () => require('../screens/SplashScreen').default,
+//     },
+//     Auth: AuthNavigator,
+//     Main: MainNavigator,
+//   },
+//   {
+//     intialRouteName: 'Splash',
+//   },
+// );

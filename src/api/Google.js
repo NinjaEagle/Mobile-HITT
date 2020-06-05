@@ -1,4 +1,5 @@
-import { Google, Constants } from 'expo';
+import * as Google from 'expo-google-app-auth';
+import Constants from 'expo-constants';
 
 const scopes = ['profile', 'email'];
 
@@ -12,6 +13,11 @@ const loginAsync = async () => {
 
     if (result.type === 'success') {
       return Promise.resolve(result.accessToken);
+      this.setState({
+        signedIn: true,
+        name: result.user.name,
+        photoUrl: result.user.photoUrl,
+      });
     }
 
     return Promise.reject('No success');
