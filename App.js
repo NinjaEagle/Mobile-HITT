@@ -103,13 +103,20 @@ export default class App extends React.Component {
 const Login = (props) => {
   return (
     <View style={styles.container}>
-      <BoxAnimated style={{ transform: [{ translateY: props.logo }] }}>
-        <View style={{ alignItems: 'center', backgroundColor: 'white' }}>
+      <BoxAnimated style={{ flex: 1, transform: [{ translateY: props.logo }] }}>
+        <View
+          style={{
+            flex: 1,
+            alignItems: 'center',
+            backgroundColor: 'white',
+            justifyContent: 'center',
+          }}
+        >
           <OnboardingLogo />
         </View>
       </BoxAnimated>
 
-      <BoxAnimated style={{ flex: 0.9, backgroundColor: 'blue' }}>
+      <BoxAnimated style={{ flex: 1, backgroundColor: 'blue' }}>
         <LoginButton onPress={() => props.signIn()} type="google">
           Continue with Google
         </LoginButton>
@@ -134,6 +141,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: 100,
+    shadowColor: 'black',
   },
   header: {
     fontSize: 25,

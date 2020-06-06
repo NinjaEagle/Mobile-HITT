@@ -19,13 +19,40 @@ const bgColor = (type) => {
 const LoginButton = ({ children, type, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress}>
-      <View style={styles.logo}>
-        {type === 'google' && <Image source={images.googleColorIcon} />}
+      <View
+        style={{
+          alignItems: 'center',
+          shadowColor: '#212121',
+          shadowOffset: {
+            width: 0,
+            height: 0,
+          },
+          shadowOpacity: 0.6,
+          shadowRadius: 5,
+          width: 80,
+          alignSelf: 'center',
+          padding: 6,
+          borderRadius: 6,
+          marginBottom: 16,
+        }}
+      >
+        <View style={{ marginRight: 16 }}>
+          <View
+            style={{
+              backgroundColor: 'white',
+              height: 32,
+              width: 32,
+              borderRadius: 6,
+              alignItems: 'center',
+              position: 'relative',
+            }}
+          >
+            {type === 'google' && <Image source={images.googleColorIcon} />}
+          </View>
+        </View>
       </View>
-      <View>
-        <Text style={styles.text}>{children}</Text>
-      </View>
-      {/* <Button title="Sign in with Google" onPress={() => props.signIn()} /> */}
+
+      <Text style={styles.text}>{children}</Text>
     </TouchableOpacity>
   );
 };
@@ -33,33 +60,11 @@ const LoginButton = ({ children, type, onPress }) => {
 export default LoginButton;
 
 const styles = StyleSheet.create({
-  // container: {
-  //   flexDirection: 'row',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   shadowColor: 'black',
-  //   shadowOffset: {
-  //     width: 0,
-  //     height: 0,
-  //   },
-  //   width: '80%',
-  //   padding: 6,
-  //   marginRight: 14,
-  //   // backgroundColor: '#1976D2',
-  //   // alignSelf: 'center',
-  //   // marginBottom: 8,
-  // },
-  login: {
-    marginRight: 14,
-  },
   logo: {
-    backgroundColor: 'white',
     height: 32,
     width: 32,
     borderRadius: 5,
     position: 'relative',
   },
-  text: {
-    marginHorizontal: 8,
-  },
+  text: { fontSize: 18, color: 'white' },
 });
