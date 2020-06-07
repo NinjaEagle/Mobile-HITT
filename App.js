@@ -81,7 +81,6 @@ export default class App extends React.Component {
       inputRange: [0, 1],
       outputRange: [150, 0],
     });
-    console.log(this.state);
 
     if (!this.state.signedIn) {
       <ActivityIndicator size="large" />;
