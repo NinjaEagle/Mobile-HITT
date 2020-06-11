@@ -234,13 +234,6 @@ PODS:
     - React
   - RNScreens (2.2.0):
     - React
-<<<<<<< HEAD
-=======
-  - RNSVG (11.0.1):
-    - React
-  - RNVectorIcons (6.6.0):
-    - React
->>>>>>> Jerry_V
   - Yoga (1.14.0)
   - youtube-ios-player-helper (0.1.6)
   - YoutubePlayer-in-WKWebView (0.3.4)
@@ -280,11 +273,6 @@ DEPENDENCIES:
   - RNDevMenu (from `../node_modules/react-native-dev-menu`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNScreens (from `../node_modules/react-native-screens`)
-<<<<<<< HEAD
-=======
-  - RNSVG (from `../node_modules/react-native-svg`)
-  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
->>>>>>> Jerry_V
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
   - youtube-ios-player-helper (~> 0.1.4)
   - YoutubePlayer-in-WKWebView (~> 0.3.3)
@@ -358,13 +346,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-gesture-handler"
   RNScreens:
     :path: "../node_modules/react-native-screens"
-<<<<<<< HEAD
-=======
-  RNSVG:
-    :path: "../node_modules/react-native-svg"
-  RNVectorIcons:
-    :path: "../node_modules/react-native-vector-icons"
->>>>>>> Jerry_V
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -401,15 +382,7 @@ SPEC CHECKSUMS:
   RNDevMenu: 9f80d65b80ba1fa84e5361d017b8c854a2f05005
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNScreens: 812b79d384e2bea7eebc4ec981469160d4948fd5
-<<<<<<< HEAD
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
-=======
-  RNSVG: 67f1f12dae2cef6ed59a42cae74a6b8f5a9e7b46
-  RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
-  Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
-  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
-  YoutubePlayer-in-WKWebView: af2f5929fc78882d94bfdfeea999b661b78d9717
->>>>>>> Jerry_V
 
 PODFILE CHECKSUM: aedca2a7b8fcd86f5552f65ee8273c340f50c65d
 
