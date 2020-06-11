@@ -1325,7 +1325,7 @@
 			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
 			remoteInfo = "React-Core";
 		};
-<< HEAD
+
 		A516E7DA4425759117FBFF9066C38882 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1360,7 +1360,7 @@
 			proxyType = 1;
 			remoteGlobalIDString = D20469A9A1E5CFB26045EAEBE3F88E5E;
 			remoteInfo = RCTTypeSafety;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		A8D228C6F74629133C291F6B44D7694D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1369,7 +1369,7 @@
 			remoteGlobalIDString = 4F265533AAB7C8985856EC78A33164BB;
 			remoteInfo = "React-RCTImage";
 		};
-<< HEAD
+
 		ABA16230C37E3E07479C33A46A145799 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1404,7 +1404,7 @@
 			proxyType = 1;
 			remoteGlobalIDString = DABE3AD6EBA3822D4F04FBC550E7158D;
 			remoteInfo = "YoutubePlayer-in-WKWebView";
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		B22DB198C9F41EF086D2EF572539CB95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1413,7 +1413,7 @@
 			remoteGlobalIDString = FE2FFE2E916C45FFAB69EA9609075D84;
 			remoteInfo = "Pods-mobilehitt-tvOS";
 		};
-<< HEAD
+
 		B27E31D35DE22CEB21578DCBF1EAFE30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1427,7 +1427,7 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
 			remoteInfo = "React-Core";
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		B4FDE4C3D9E781E105E7BEB9324B68F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1450,7 +1450,7 @@ AD
 			proxyType = 1;
 			remoteGlobalIDString = 53D121F9F9BB0F8AC1C94A12C5A8572F;
 			remoteInfo = "React-RCTVibration";
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		BB43E3440C83F8BC24E141BE6C01D507 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1473,7 +1473,7 @@ AD
 			proxyType = 1;
 			remoteGlobalIDString = 11989A5E568B3B69655EE0C13DCDA3F9;
 			remoteInfo = "React-RCTActionSheet";
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		C30421475470EF3D9398709A4E33A22F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1503,7 +1503,7 @@ AD
 			proxyType = 1;
 			remoteGlobalIDString = DBD2D83E10F8B7D3F4E0E34E6A9FCFA6;
 			remoteInfo = "React-RCTText";
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		CE8ED3B765478B8EBFC5731084A0710F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1530,7 +1530,7 @@ AD
 			remoteInfo = Folly;
 		};
 		D46E8937CEAEEA89F64B612844A9AE5C /* PBXContainerItemProxy */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -1581,7 +1581,7 @@ AD
 			remoteGlobalIDString = 651511D7DA7F07F9FC9AA40A2E86270D;
 			remoteInfo = "React-RCTNetwork";
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		D8E27FD3930263DBE144E6DEE6DD8F43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1659,7 +1659,7 @@ AD
 			proxyType = 1;
 			remoteGlobalIDString = 1BEE828C124E6416179B904A9F66D794;
 			remoteInfo = React;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		E2C9B1A1C07B3283DDE4123A710B75C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1696,7 +1696,7 @@ AD
 			proxyType = 1;
 			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
 			remoteInfo = "React-Core";
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		E7611F30C11D9004887DF124CA54CC54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1719,7 +1719,7 @@ AD
 			proxyType = 1;
 			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
 			remoteInfo = "React-Core";
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		EAA9F477386E52EB30E75431006FAA8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1737,7 +1737,7 @@ AD
 			remoteGlobalIDString = B9E8F4CA2A4A8599389FEB665A9B96FF;
 			remoteInfo = RNGestureHandler;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		EE98A4C80DE900CD0C9ED8195B4EF52D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1789,7 +1789,7 @@ AD
 			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
 			remoteInfo = "React-Core";
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		F9D3756881C74D34E390BDDADE67CF64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -3798,7 +3798,7 @@ AD
 		FF50789B2BA721B8AE96F21E6EEB75B0 /* Pods-mobilehitt-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mobilehitt-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		FF8C7C4ED1F55F07255DAD1179E6EA30 /* RCTImageBlurUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTImageBlurUtils.h; path = Libraries/Image/RCTImageBlurUtils.h; sourceTree = "<group>"; };
 		FFBE6F55AB94635AD87BD3A48B4ADB2F /* RCTStyleAnimatedNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTStyleAnimatedNode.h; sourceTree = "<group>"; };
->>>>>>> Jerry_V
+> Jerry_V
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3923,7 +3923,7 @@ AD
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		674F7A50F5D148B4A41C618D3EC5E41E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4082,7 +4082,7 @@ AD
 				F7E28336A2EF53389A44FC57E3AC1C51 /* Inspector */,
 			);
 			name = DevSupport;
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 		033DEBFBC8DB809E0AE0E9C36DBFEA55 /* Support Files */ = {
@@ -4145,7 +4145,7 @@ AD
 				6574EE922AF809E1D2D73C16FA1D24E0 /* RNGestureHandler-prefix.pch */,
 				EB941CC744EB89062F9F153D2468DF14 /* RNGestureHandler.debug.xcconfig */,
 				6B343DFCCE4612F278DDB627A80CF79B /* RNGestureHandler.release.xcconfig */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = "Support Files";
 			path = "../../ios/Pods/Target Support Files/RNGestureHandler";
@@ -4434,7 +4434,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				ACC149B8EBF5A9B921670CAFE8F3B480 /* React-RCTSettings.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -4733,7 +4733,7 @@ AD
 				3F4D83CAB510C362C533C8737F938258 /* RNCMaskedViewManager.m */,
 				C3C21FDA6F95B02AC96F08995C7380C3 /* Pod */,
 				857A381E49C54CD662ED89697608D9A9 /* Support Files */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = RNCMaskedView;
 			path = "../../node_modules/@react-native-community/masked-view";
@@ -4763,7 +4763,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				85B5DDCCC65E3C289CC90A80CF7C4300 /* React-RCTBlob.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -4826,7 +4826,7 @@ AD
 				30027C229A03EA31D59B0606402D6950 /* react-native-safe-area-context-prefix.pch */,
 				E45924C406AA70B3E7DA15955756DE48 /* react-native-safe-area-context.debug.xcconfig */,
 				EE6898996483003F3E7DBE286DA01340 /* react-native-safe-area-context.release.xcconfig */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = jscallinvoker;
 			sourceTree = "<group>";
@@ -5174,7 +5174,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				8A9CA5839025243DA684C68E89CAF494 /* React-RCTImage.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -5196,7 +5196,7 @@ AD
 				1A3EF4FA3BD90331C6430148365E5108 /* RCTSurfaceHostingView.mm */,
 				733F72C5F5623B320150F507C37A19B8 /* RCTSurfaceSizeMeasureMode.h */,
 				B118A0854D4AFC4A38BDBE23FD110B34 /* RCTSurfaceSizeMeasureMode.mm */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = SurfaceHostingView;
 			path = SurfaceHostingView;
@@ -5390,7 +5390,7 @@ AD
 				9AC24829A7F834140CBD3FBFDA1D4DE7 /* LICENSE */,
 				9009EE26F6E2AF2A9480BCB6B41F1746 /* README.md */,
 				AD83044209958D965EC737505E577A36 /* RNDevMenu.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = SurfaceHostingView;
 			path = SurfaceHostingView;
@@ -5496,7 +5496,7 @@ AD
 			);
 			name = "Support Files";
 			path = "../../../../ios/Pods/Target Support Files/React-jsiexecutor";
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 		3E6D91C2CF64F023AAF30A081C7DE059 /* Pods-mobilehitt-tvOS */ = {
@@ -5582,7 +5582,7 @@ AD
 				47F905C47FDFD5BB0D61646C8BE04BAF /* WKYTPlayerView.bundle */,
 			);
 			name = Resources;
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 		447EA2C2250B48BE65A28F95EC076DAF /* turbomodule */ = {
@@ -5607,7 +5607,7 @@ AD
 			sourceTree = "<group>";
 		};
 		473F745D43D3156DDBAE3BE5C989B575 /* RCTImageHeaders */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXGroup;
 			children = (
 				96E87E761097D2E32D70F2ECA475497F /* RCTAnimatedImage.h */,
@@ -5700,7 +5700,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				5156E0E2F8666CD52EDFAA5509F6A144 /* React-CoreModules.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Multiline;
 			path = Multiline;
@@ -5719,7 +5719,7 @@ AD
 				0F5337DCE47861FA9528D7CD60D4B223 /* React-jsi-prefix.pch */,
 				5E1B0B9060805BB83C3EBC6DFB6E03D9 /* React-jsi.debug.xcconfig */,
 				3E582D25B70DE2EB1ED503445FCBAF4D /* React-jsi.release.xcconfig */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = "Support Files";
 			path = "../../../../ios/Pods/Target Support Files/React-jsi";
@@ -5846,7 +5846,7 @@ AD
 			);
 			name = RCTTypeSafety;
 			path = "../../node_modules/react-native/Libraries/TypeSafety";
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 		5AD579DE5D22777C81100914603B056A /* Pods */ = {
@@ -5943,7 +5943,7 @@ AD
 			);
 			name = "React-cxxreact";
 			path = "../../node_modules/react-native/ReactCommon/cxxreact";
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 		5BDECF3B0F4B9965FD6606AD70E84A40 /* Shapes */ = {
@@ -6126,7 +6126,7 @@ AD
 			children = (
 				D09E4329FF037E271D1AD1D50CB49859 /* FBLazyVector.debug.xcconfig */,
 				2F89DD78E8F8B022F5EE25BEBAD41492 /* FBLazyVector.release.xcconfig */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = "Support Files";
 			path = "../../../../ios/Pods/Target Support Files/FBLazyVector";
@@ -6211,7 +6211,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				E018183BC5FE8B44DA99AC8E692A9F28 /* React-RCTAnimation.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = DevSupport;
 			sourceTree = "<group>";
@@ -6634,7 +6634,7 @@ AD
 				9F10E308748AE81C5BDCC28026DD098A /* jscallinvoker */,
 				18120391A817657C55B420E252C287AE /* Support Files */,
 				447EA2C2250B48BE65A28F95EC076DAF /* turbomodule */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -6793,7 +6793,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				896F4F6AD2BC1184E1680B8DF2F1DDEB /* React-Core.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -7038,7 +7038,7 @@ AD
 				53CF62808B9299A2805B0432BF3C9988 /* RCTSafeAreaViewLocalData.m */,
 				2D8B492FB705DA2CB5500FAC947DA160 /* RCTSafeAreaViewManager.h */,
 				0E4308625824CB7699295E35A0FFAE6E /* RCTSafeAreaViewManager.m */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = SafeAreaView;
 			path = SafeAreaView;
@@ -7310,7 +7310,7 @@ AD
 			children = (
 				82BBD16CAA2AE2187860E36C171C2B81 /* RCTBaseTextShadowView.m */,
 				40893F270B2E3F4125128F11CB69E0FB /* RCTBaseTextViewManager.m */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = BaseText;
 			path = BaseText;
@@ -7526,12 +7526,12 @@ AD
 				72824780A93F6E7E63FC0BD0D7292AD6 /* LICENSE */,
 				003C7F5467D53116460421D3FCF9C777 /* README.md */,
 				CBD90B2365633290767EE9916FFCC282 /* RNScreens.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-<< HEAD
+
 		C5DF3FA665C0EDD4FB8054BB541DEF7A /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
@@ -7596,13 +7596,13 @@ AD
 				09CF6B077A8E5F17F1B9A66879EDDB0F /* RNSScreenStackHeaderConfig.m */,
 				A7A1C729794A2F0E282D2FE0706DD0E9 /* Pod */,
 				EDF15CF8A621FAA7C645487646B1BF47 /* Support Files */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = RNScreens;
 			path = "../../node_modules/react-native-screens";
 			sourceTree = "<group>";
 		};
-<< HEAD
+
 		C8DBBB2CA321F9AEFADF0CB411166654 /* Text */ = {
 			isa = PBXGroup;
 			children = (
@@ -7615,13 +7615,13 @@ AD
 			isa = PBXGroup;
 			children = (
 				5DA3800FEF46CFD432601DB5E9267A44 /* RCTTypeSafety.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Text;
 			path = Text;
 			sourceTree = "<group>";
 		};
-<< HEAD
+
 		C8F84B2A52D7D03468BE7D02F9B09919 /* core */ = {
 			isa = PBXGroup;
 			children = (
@@ -7728,13 +7728,13 @@ AD
 				8287F199908EF93557ED5FC23DDDC61F /* LICENSE */,
 				ADC42284FCAC2F209FB8A06AE2D8DF64 /* README.md */,
 				97590F3636BB9B8E1BE2A6E3DA85085F /* RNVectorIcons.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = "Support Files";
 			path = "../../../../ios/Pods/Target Support Files/React-RCTVibration";
 			sourceTree = "<group>";
 		};
-<< HEAD
+
 		CC392C31BEB7C3601CAE64B605E70442 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -7753,7 +7753,7 @@ AD
 			);
 			name = platform;
 			path = turbomodule/core/platform;
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 		B4C957C300FC4C34C42C1AC90E3DD470 /* Support Files */ = {
@@ -7771,7 +7771,7 @@ AD
 		B80774E5D4FA1221CA332ECB6E0D6CF1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-<< HEAD
+
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				8F0E7283385700DBA1CD9CA782267D37 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
@@ -7782,7 +7782,7 @@ AD
 				B8FB5548D3BFDCF3DD2ABBE1DF04A88A /* LICENSE */,
 				840931C297EE14D2221E6ADB14AC692C /* react-native-webview.podspec */,
 				612C2A823B757CB23875875C19E505C8 /* README.md */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -7936,7 +7936,7 @@ AD
 				45037E868061FBB07F8DAC7106D1972F /* RCTMultilineTextInputView.h */,
 				ADF56368961AF96AFC49FFBDB6AC8115 /* RCTMultilineTextInputViewManager.h */,
 				5329F9DF4D708688AFBD83CD478F3567 /* RCTUITextView.h */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Multiline;
 			path = Multiline;
@@ -8060,7 +8060,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				0F3367CCD81B96E3A5FD77635064A231 /* React-RCTLinking.podspec */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -8128,7 +8128,7 @@ AD
 				481E22BBEEF9327E0614D74BBD3D033B /* RNSVGPainterBrush.m */,
 				DC8917C0772D644C71476C53966A0A09 /* RNSVGSolidColorBrush.h */,
 				6A47B7D2890F786818849F15F283AF6F /* RNSVGSolidColorBrush.m */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = Modules;
 			path = React/Modules;
@@ -8363,7 +8363,7 @@ AD
 				BFE900B0DDC638EC5B527998905122DE /* Folly-prefix.pch */,
 				048680F5BDEE840604277E836468294B /* Folly.debug.xcconfig */,
 				35E4E0AC380A1F985903F12C593136CF /* Folly.release.xcconfig */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Folly";
@@ -8425,7 +8425,7 @@ AD
 			);
 			name = jsi;
 			path = jsi;
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 		EC3FC98FE3DB3054480C96A7D592B375 /* Pod */ = {
@@ -8555,7 +8555,7 @@ AD
 			isa = PBXGroup;
 			children = (
 				1EB9A7AE7CBDE097512EE165CB96577E /* RCTVibration.h */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = RCTVibrationHeaders;
 			sourceTree = "<group>";
@@ -8727,7 +8727,7 @@ AD
 			);
 			name = Drivers;
 			path = Libraries/NativeAnimation/Drivers;
->>>>>>> Jerry_V
+> Jerry_V
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -8839,7 +8839,7 @@ AD
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		4ACF427C2C88E12B66D9589162E4DED3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -9980,7 +9980,7 @@ AD
 				CF2A73C68E10317D853DACA4DF527D82 /* Headers */,
 				9CCF7D3C2EAAA5ADE62D2A2C5EE4214C /* Sources */,
 				1BF481CD86EB2FCB09921E8C64FF8CCB /* Frameworks */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			buildRules = (
 			);
@@ -10055,7 +10055,7 @@ AD
 				23C419417F50C88C792ADD09B400E295 /* PBXTargetDependency */,
 				CC32EA10A3D34AE2421669BB626433B0 /* PBXTargetDependency */,
 				84F1A292C70100EB32AF07B240E5DAB3 /* PBXTargetDependency */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			name = "Pods-mobilehitt";
 			productName = "Pods-mobilehitt";
@@ -10162,7 +10162,7 @@ AD
 			productRefGroup = D1F96E1ED99BE77E38FDBB58DC933722 /* Products */;
 =======
 			productRefGroup = 9E957EDC67128799D8CBF1D73877E0FE /* Products */;
->>>>>>> Jerry_V
+> Jerry_V
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -10206,7 +10206,7 @@ AD
 =======
 				DE32677FA772BFFD0172EB7EE9E4E7E9 /* RNSVG */,
 				96150F524B245896B800F84F369A9A5A /* RNVectorIcons */,
->>>>>>> Jerry_V
+> Jerry_V
 				2B25F90D819B9ADF2AF2D8733A890333 /* Yoga */,
 				D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */,
 				DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */,
@@ -10254,7 +10254,7 @@ AD
 			files = (
 				D7596C0822095C7443043256F501FB50 /* RCTActionSheetManager.m in Sources */,
 				636C33FBB10F14F5FBDC1AE8257032A6 /* React-RCTActionSheet-dummy.m in Sources */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -10828,7 +10828,7 @@ AD
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<< HEAD
+
 =======
 		F2A0CA0EE38C99301236BE9244118FD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -10900,7 +10900,7 @@ AD
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -10936,7 +10936,7 @@ AD
 			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
 			targetProxy = F54BA8B0C680EEFAEB126B2E22F65EFF /* PBXContainerItemProxy */;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		0D751055C363323C78854582E5CE9EEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBLazyVector;
@@ -10991,7 +10991,7 @@ AD
 			target = FE2FFE2E916C45FFAB69EA9609075D84 /* Pods-mobilehitt-tvOS */;
 			targetProxy = B22DB198C9F41EF086D2EF572539CB95 /* PBXContainerItemProxy */;
 		};
-<< HEAD
+
 		1D1E4E27F0EBFA5C5F733274957D5EB4 /* PBXTargetDependency */ = {
 =======
 		1E14D1D2F202CB36D6C083F0CD781284 /* PBXTargetDependency */ = {
@@ -11001,13 +11001,13 @@ AD
 			targetProxy = FDBC664B296116E576AB7E96D2D57EDC /* PBXContainerItemProxy */;
 		};
 		1EACB2D315F4A4E7DDF6CB5061BFE090 /* PBXTargetDependency */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXTargetDependency;
 			name = "React-RCTBlob";
 			target = 95D98F901D07557EF7CA38D3F03832C5 /* React-RCTBlob */;
 			targetProxy = 48B7C839D4D37F976BD35BEDB6DB6A53 /* PBXContainerItemProxy */;
 		};
-<< HEAD
+
 		222692354213E6D9B316927A53202777 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "React-RCTSettings";
@@ -11017,7 +11017,7 @@ AD
 		22451735CBDFFA95D04A05120F0A9824 /* PBXTargetDependency */ = {
 =======
 		22514ABEC1A36041D2E050358155BE1F /* PBXTargetDependency */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXTargetDependency;
 			name = "React-RCTSettings";
 			target = 680299219D3A48D42A648AF6706275A9 /* React-RCTSettings */;
@@ -11061,7 +11061,7 @@ AD
 			target = 938CCE22F6C4094B3FB6CF1478579E4B /* React-RCTAnimation */;
 			targetProxy = 795F6AB3B1D817CD5F5360FEE88A207A /* PBXContainerItemProxy */;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		26AC05181CF33A4E9227D17DDA7AEE49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = glog;
@@ -11122,7 +11122,7 @@ AD
 			name = RCTRequired;
 			target = E7E7CE52C8C68B17224FF8C262D80ABF /* RCTRequired */;
 			targetProxy = 9BBC9E2A08C567AB2AF4CBA35DA4F2D0 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		341245DB9119E0C06A494C2497956393 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11140,7 +11140,7 @@ AD
 			targetProxy = E15A64FA41D4C393ED8FE65A5C1A0E54 /* PBXContainerItemProxy */;
 		};
 		394F64B61626E0AE42EACF2D9CBF6DFB /* PBXTargetDependency */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXTargetDependency;
 			name = "React-RCTActionSheet";
 			target = 11989A5E568B3B69655EE0C13DCDA3F9 /* React-RCTActionSheet */;
@@ -11184,7 +11184,7 @@ AD
 			target = B6D5DD49633DFF0657B8C3F08EB3ABA9 /* ReactCommon */;
 			targetProxy = 557407361285FA301951204E241F9CDB /* PBXContainerItemProxy */;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		49B84289A3B9871A10A133360307483A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
@@ -11217,7 +11217,7 @@ AD
 			targetProxy = 1AEC725A5656CA48DA3AFCDF08175F7B /* PBXContainerItemProxy */;
 		};
 =======
->>>>>>> Jerry_V
+> Jerry_V
 		4B7CF4BCE880915A07A1011FB01F4A55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "React-jsi";
@@ -11244,7 +11244,7 @@ AD
 			target = B9E8F4CA2A4A8599389FEB665A9B96FF /* RNGestureHandler */;
 			targetProxy = EE3E58D46EB1A0EC3EF4FFD018E0C6D6 /* PBXContainerItemProxy */;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		521617DBA3CB0ABC6D080079A459997A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "React-cxxreact";
@@ -11275,7 +11275,7 @@ AD
 			name = "React-RCTBlob";
 			target = 95D98F901D07557EF7CA38D3F03832C5 /* React-RCTBlob */;
 			targetProxy = 8401C874695A134E1F908A7B1C0CA390 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		590F408F68DC29A47FE13A77A85F5104 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11323,7 +11323,7 @@ AD
 		6C7D7F6D70BED83B2675D2BD14A53A20 /* PBXTargetDependency */ = {
 =======
 		693458986E17AAA3C3A7228DA8581652 /* PBXTargetDependency */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXTargetDependency;
 			name = "React-Core";
 			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
@@ -11355,7 +11355,7 @@ AD
 			targetProxy = 4BFC05268D25384FF1A54F39314AFFD1 /* PBXContainerItemProxy */;
 		};
 =======
->>>>>>> Jerry_V
+> Jerry_V
 		7461A63F993AB39EB67CB5B64395C17B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "React-Core";
@@ -11368,7 +11368,7 @@ AD
 			target = D20469A9A1E5CFB26045EAEBE3F88E5E /* RCTTypeSafety */;
 			targetProxy = 386C0EB352726BA92F7F015C2FB264EF /* PBXContainerItemProxy */;
 		};
-<< HEAD
+
 		7D5CB666354AFB73461E87DA486DF97E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RNReanimated;
@@ -11398,7 +11398,7 @@ AD
 			name = "React-RCTNetwork";
 			target = 651511D7DA7F07F9FC9AA40A2E86270D /* React-RCTNetwork */;
 			targetProxy = 691C0CEF20373E53476E5042B78AB545 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		816BCBEB5C93B0AB6EEDE4140A9F208F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11406,7 +11406,7 @@ AD
 			target = DA0709CAAD589C6E7963495210438021 /* React-jsiexecutor */;
 			targetProxy = 4BDE049EAF4FCC4C06846444404009A6 /* PBXContainerItemProxy */;
 		};
-<< HEAD
+
 		81961616446A25B7D4EE7E978A681D96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RCTRequired;
@@ -11416,7 +11416,7 @@ AD
 		8883129CD6835E27268172B1A35B329D /* PBXTargetDependency */ = {
 =======
 		8287A8B680D424459AA48A6D20DCE358 /* PBXTargetDependency */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXTargetDependency;
 			name = FBReactNativeSpec;
 			target = C3496D0495E700CF08A90C41EA8FA4BB /* FBReactNativeSpec */;
@@ -11446,7 +11446,7 @@ AD
 			target = 2B25F90D819B9ADF2AF2D8733A890333 /* Yoga */;
 			targetProxy = 87BEB6118A17348FD49D4F20F1B3188F /* PBXContainerItemProxy */;
 		};
-<< HEAD
+
 		8BADB0580E6EF6FDC4F866B7E273072C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "React-RCTNetwork";
@@ -11464,7 +11464,7 @@ AD
 			name = RNSVG;
 			target = DE32677FA772BFFD0172EB7EE9E4E7E9 /* RNSVG */;
 			targetProxy = 4EFAE0FECAFAD8481BDAF5631C9F612E /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		8DB7BD354B70BCE7389CF8D810A012CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11484,7 +11484,7 @@ AD
 			target = D0EFEFB685D97280256C559792236873 /* glog */;
 			targetProxy = DD5210D113FB5480D0E6BFF1CDE4245F /* PBXContainerItemProxy */;
 		};
-<< HEAD
+
 		97A246DDE9CA90F58B6F007E5835AD5F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "React-RCTActionSheet";
@@ -11502,7 +11502,7 @@ AD
 			name = "React-Core";
 			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
 			targetProxy = 4558A47DC55E60377970FE966EF9BC58 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		A0C3928F735E03760B70DC4735286B75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11546,7 +11546,7 @@ AD
 			name = "React-RCTImage";
 			target = 4F265533AAB7C8985856EC78A33164BB /* React-RCTImage */;
 			targetProxy = 191DA9EF4E7E7096A468A23727D96946 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		AD8CC2C3AD641422282F5A8CD85BA0A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11590,7 +11590,7 @@ AD
 			name = "YoutubePlayer-in-WKWebView";
 			target = DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */;
 			targetProxy = B17B8D426692199B9A80680F29F8BAE8 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		BB0C888F9800A9CBBD7F9AB387D65080 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11628,7 +11628,7 @@ AD
 			name = "React-Core";
 			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
 			targetProxy = B4FDE4C3D9E781E105E7BEB9324B68F8 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		BF9BF0CDEA697B8AF2D71C6FF954AC77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11660,7 +11660,7 @@ AD
 			name = Folly;
 			target = A4F685BE3CAC127BDCE4E0DBBD88D191 /* Folly */;
 			targetProxy = D0DC120EA03A496BDF819155DF8F30DB /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		CB1231450678EB40FF6D52E17793B56F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11686,7 +11686,7 @@ AD
 			name = "React-RCTNetwork";
 			target = 651511D7DA7F07F9FC9AA40A2E86270D /* React-RCTNetwork */;
 			targetProxy = D58F207FC115F070941C83C180E5168A /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		D09D4D6E49BA51BBDC11C5E6950F580E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11718,7 +11718,7 @@ AD
 			name = "React-RCTImage";
 			target = 4F265533AAB7C8985856EC78A33164BB /* React-RCTImage */;
 			targetProxy = D5C9604D173A89B6F916EB20129BE130 /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		D47C61450FD47102A9D6290885B06872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11738,7 +11738,7 @@ AD
 			name = FBLazyVector;
 			target = 8CC4EAA817AA86310D1900F1DAB3580F /* FBLazyVector */;
 			targetProxy = DBB0561F85640A052FC1F22463DC75EF /* PBXContainerItemProxy */;
->>>>>>> Jerry_V
+> Jerry_V
 		};
 		DDFBB112F89C7324E0572676048A6E6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11790,7 +11790,7 @@ AD
 			targetProxy = 8BC5F6CDBB1414C336C107BAE56342E1 /* PBXContainerItemProxy */;
 		};
 =======
->>>>>>> Jerry_V
+> Jerry_V
 		EC566DF9BFE7FD959CB2819808630F73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Folly;
@@ -11807,7 +11807,7 @@ AD
 			targetProxy = F1D31400DE78E76FE461920F078645F1 /* PBXContainerItemProxy */;
 		};
 		EE98EB0BDBD385DF720615F2E6D5ADDD /* PBXTargetDependency */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXTargetDependency;
 			name = RNCMaskedView;
 			target = 1A0445474DA11CA659C4BCC5AB64B1BF /* RNCMaskedView */;
@@ -11841,7 +11841,7 @@ AD
 		F3006C35A110F3CBE2FA7C140D286860 /* PBXTargetDependency */ = {
 =======
 		F32C0A34EF8CEB78CB80B5ACA1B14851 /* PBXTargetDependency */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = PBXTargetDependency;
 			name = "React-RCTLinking";
 			target = 6FE9147F8AAA4DE676C190F680F47AE2 /* React-RCTLinking */;
@@ -11861,7 +11861,7 @@ AD
 			target = 651511D7DA7F07F9FC9AA40A2E86270D /* React-RCTNetwork */;
 			targetProxy = D6A600837F4E8877D9A126CDFDF27C23 /* PBXContainerItemProxy */;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 		F7D04D57FB116EFF248374308C552CC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DoubleConversion;
@@ -11874,7 +11874,7 @@ AD
 			target = E7E7CE52C8C68B17224FF8C262D80ABF /* RCTRequired */;
 			targetProxy = 6A307E7AA187B3493D468319584B81F0 /* PBXContainerItemProxy */;
 		};
-<< HEAD
+
 		FC16AD7DC11056FA4D421DC3CBDE3281 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "React-jsiexecutor";
@@ -11882,7 +11882,7 @@ AD
 			targetProxy = C2E94287791EF8529908A9891C835377 /* PBXContainerItemProxy */;
 		};
 =======
->>>>>>> Jerry_V
+> Jerry_V
 		FCF08186724BF5B4FB64D9D9D570F1C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "boost-for-react-native";
@@ -11915,11 +11915,11 @@ AD
 		};
 		061598C81D59921FBCAE51DC1F53ABEA /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 1C97E8A2A3390C4F8043871DFD12C1CD /* Yoga.release.xcconfig */;
 =======
 			baseConfigurationReference = 951BFFA4A1E6DBEBA60ADBB44347D82F /* Yoga.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -11988,11 +11988,11 @@ AD
 		};
 		10C58EC2071363BC1E0C5169BBA8EB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 7D97554042D6DE281FCF2A1593912EF5 /* React-jsi.debug.xcconfig */;
 =======
 			baseConfigurationReference = 5E1B0B9060805BB83C3EBC6DFB6E03D9 /* React-jsi.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12015,11 +12015,11 @@ AD
 		};
 		12692AD4CA8CEC4DFA0533F28EF97EE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = D4B50E068E4B0EA16C25FE97C3DCE55D /* React-RCTBlob.debug.xcconfig */;
 =======
 			baseConfigurationReference = 3FEAA142667FE4B2C8971F36462ABD01 /* React-RCTBlob.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12042,11 +12042,11 @@ AD
 		};
 		1AED48D7F22D504683CD7A711A8C2BC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = C43EA0DE47EBB28B729B7BDDC8861326 /* React-cxxreact.release.xcconfig */;
 =======
 			baseConfigurationReference = E74F7ACA65B88D16728478D48D70DF24 /* React-cxxreact.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12120,7 +12120,7 @@ AD
 			baseConfigurationReference = B550485F3F788F6C7FCD82EC5F77B42F /* FBLazyVector.release.xcconfig */;
 =======
 			baseConfigurationReference = 2F89DD78E8F8B022F5EE25BEBAD41492 /* FBLazyVector.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -12158,11 +12158,11 @@ AD
 		};
 		2204417058CCB6A1C63F12EA1F8E9378 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = CDD1ADCE77A6FA02520BF3E2A4B112D6 /* React-Core.debug.xcconfig */;
 =======
 			baseConfigurationReference = DBEEE310388E41E5927EF9F74BDBB800 /* React-Core.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12185,11 +12185,11 @@ AD
 		};
 		24181DAB9ACBB335E49E47B66DF3A86C /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = A511847D1EA0C0B92C924BCA68AA731D /* React-Core.release.xcconfig */;
 =======
 			baseConfigurationReference = 708202CC66A83C8D3C4BB0133D547C5B /* YoutubePlayer-in-WKWebView.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12236,11 +12236,11 @@ AD
 		};
 		2D9F0DAA080426549967935AE084000C /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 888B81347042B0D1FE00023A11B0D4D9 /* React-jsinspector.debug.xcconfig */;
 =======
 			baseConfigurationReference = 73D73C35C1ED7F28B7BE5806696CE029 /* React-Core.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12264,11 +12264,11 @@ AD
 		};
 		2DC8F2D70DB11BE37774BEE62F690C1B /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = B960C583B9EB435AB97ACC79FD072711 /* RNReanimated.release.xcconfig */;
 =======
 			baseConfigurationReference = A192A7482623901CE8EDEBA3CD7E1952 /* React-RCTImage.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12292,11 +12292,11 @@ AD
 		};
 		301BDB01D26B969342D0FFAECFCE1DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = FB89C76EB9EF9ADA77DBCD2360528E05 /* RNCMaskedView.debug.xcconfig */;
 =======
 			baseConfigurationReference = 9F033D273BE48F0DC5A7704423096691 /* React-jsinspector.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12319,11 +12319,11 @@ AD
 		};
 		3D228BE306435A63DE63920ECA04EAEE /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 9263AB7E761ABEC82FA5E275AB45AE5C /* React-jsi.release.xcconfig */;
 =======
 			baseConfigurationReference = C2B5DC9553D6CBA54367B0A729DADA6A /* React-RCTSettings.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12347,11 +12347,11 @@ AD
 		};
 		40C2E922683517B1469B545A7B2FDBF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = E623813E4839333BA8A1F4352F85D0F5 /* React-jsinspector.release.xcconfig */;
 =======
 			baseConfigurationReference = 611767D1F221FDB5C535F790E0EF0EB4 /* React-RCTActionSheet.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12375,11 +12375,11 @@ AD
 		};
 		428AE0CC224FCE577F164AF9DBDD95BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 4FCAF78B83EE31DDA5606282A796AC77 /* React-jsiexecutor.debug.xcconfig */;
 =======
 			baseConfigurationReference = 8C70CA7E060E7F78F328AA7690A5CE90 /* RNCMaskedView.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12402,11 +12402,11 @@ AD
 		};
 		44CA474B814524632F3BFEA85B149353 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = F3B74298CE7C19C022340C8CDBC4B532 /* React-RCTImage.release.xcconfig */;
 =======
 			baseConfigurationReference = 3E582D25B70DE2EB1ED503445FCBAF4D /* React-jsi.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12430,11 +12430,11 @@ AD
 		};
 		47060B733DAA35F6D4B3D5268A77CAFF /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = D72CBA56636794ECDD980EEC48075FDC /* React-RCTSettings.release.xcconfig */;
 =======
 			baseConfigurationReference = 3EE52A4D855C7D7AC3A6BA4EFB4B365C /* React-jsinspector.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12495,11 +12495,11 @@ AD
 		};
 		54FBD7948960F20887D4B7B52D918B33 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = ADBBFA336F6D507309C5295C08EF516E /* React-RCTNetwork.release.xcconfig */;
 =======
 			baseConfigurationReference = 3482F8DE60121ADB30FC54005AB69550 /* youtube-ios-player-helper.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12547,11 +12547,11 @@ AD
 		};
 		562A8D9E2951AA6821B28FE889EBC1A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = D50C6A561CBF7F5B90CAE99CB5156444 /* React-RCTLinking.release.xcconfig */;
 =======
 			baseConfigurationReference = 5D283DB6043894615514809CA2191CE7 /* React-RCTLinking.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12575,11 +12575,11 @@ AD
 		};
 		56803A038663C17CCB19F050FFCF508D /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = BC8176F8ACB463E04DCF704D7EAFCAE1 /* RNGestureHandler.release.xcconfig */;
 =======
 			baseConfigurationReference = 6B343DFCCE4612F278DDB627A80CF79B /* RNGestureHandler.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12603,11 +12603,11 @@ AD
 		};
 		57408A368E4CEF46BE018DA2DE76435B /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 0ADA2E393AB4EC63C2712E12799AABEC /* RCTTypeSafety.debug.xcconfig */;
 =======
 			baseConfigurationReference = 6972D26A8482C103AC14EFE1F41CB849 /* RCTTypeSafety.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12654,11 +12654,11 @@ AD
 		};
 		59A22D35CA5C2AB2044E1FA47CA9F385 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 673B7AFDF89ABF2791FEA795A5AC9569 /* React-CoreModules.debug.xcconfig */;
 =======
 			baseConfigurationReference = CA22753451C30D32FCB415D635ED0040 /* React-CoreModules.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12694,11 +12694,11 @@ AD
 		};
 		5A2702FB3FDED7D6E42EEA336EB44A8F /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 9C27521256E14FD8D755617895D9DCFB /* React-CoreModules.release.xcconfig */;
 =======
 			baseConfigurationReference = 02AE9D519BFB698ABF9625862A78EA4B /* React-CoreModules.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12722,11 +12722,11 @@ AD
 		};
 		5DE0A6E98D9EDC4E28F52C3F90E037E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = C3D830756EB3F11F1B95B0B0629D09D2 /* react-native-safe-area-context.debug.xcconfig */;
 =======
 			baseConfigurationReference = 121E782C6DBABC980633F049AB77C568 /* React-RCTSettings.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12749,11 +12749,11 @@ AD
 		};
 		60CD3148909EE709C3160D068B3B0A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = D9F65BE20FFE49A5D2AEDB534A9C5B64 /* React-RCTAnimation.debug.xcconfig */;
 =======
 			baseConfigurationReference = F47902A4B4F9CBC25ABF29A2DFBDF034 /* RCTYouTube.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12776,11 +12776,11 @@ AD
 		};
 		636EC3A1DF799AE48A0BEE5E635EA2BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 34B4424FE00B3B7EB0573A672C9667A5 /* FBReactNativeSpec.release.xcconfig */;
 =======
 			baseConfigurationReference = E45924C406AA70B3E7DA15955756DE48 /* react-native-safe-area-context.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12801,7 +12801,7 @@ AD
 			};
 			name = Debug;
 		};
-<< HEAD
+
 		72A90AD3E6DD0921E3E0F0BF895C0BF2 /* Debug */ = {
 =======
 		649EEEA8D91CBAE9B35CF5A1471B116A /* Debug */ = {
@@ -12828,7 +12828,7 @@ AD
 			name = Debug;
 		};
 		67B2CBD64FEE1A0DE3702A48E38764E8 /* Debug */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 627C8D170A2A7EEA4D48D6DF5635EFEE /* react-native-webview.debug.xcconfig */;
 			buildSettings = {
@@ -12877,11 +12877,11 @@ AD
 		};
 		70F1659A0CF547141A17DEF02CFA5F06 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 5EA954E77B55DA6CBC8CDE6DCBD3F368 /* RNReanimated.debug.xcconfig */;
 =======
 			baseConfigurationReference = 085FDE73A87C07EA61F925FD408AFD0B /* React-RCTBlob.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -12949,7 +12949,7 @@ AD
 			};
 			name = Debug;
 		};
-<< HEAD
+
 		871FD87E13F4D7A3D6B04D63420ABC9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82FE19C44FF10BC7C9318A2FEDE9969D /* RCTRequired.release.xcconfig */;
@@ -12979,7 +12979,7 @@ AD
 		7ACAD833E13AF06C0687180E7E5171F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2954962E29ED22EF0811B539B6EEE4CB /* Pods-mobilehitt-tvOS.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -13000,11 +13000,11 @@ AD
 		};
 		7BF32FD6B9CCBF40044D64E1FEECA37F /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 17C6F803E622897FB07B23144FC2AED6 /* RCTRequired.debug.xcconfig */;
 =======
 			baseConfigurationReference = 88864E3E6B33E45245D96EDE171D8626 /* Pods-mobilehitt-tvOSTests.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -13025,11 +13025,11 @@ AD
 		};
 		7F460301BD7C971092CA99C2AFD1408A /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 78F436F49DCD36B379635AC7B586CDC4 /* React-RCTSettings.debug.xcconfig */;
 =======
 			baseConfigurationReference = 0F7DA6E558151B91B2BAE873607F8A72 /* RNVectorIcons.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13079,11 +13079,11 @@ AD
 		};
 		888A220AA4601571EED72B1131317F28 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 512AE9562A2769E199209AFFC1C12809 /* React-RCTActionSheet.release.xcconfig */;
 =======
 			baseConfigurationReference = FE79CAC860C4151E1670CA85AC0821D4 /* Pods-mobilehitt-tvOS.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -13105,11 +13105,11 @@ AD
 		};
 		8BE6481ABE6391E69F805F6745F86122 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = BEAEED0D5E1894E4DA503FB8961FD6B7 /* RNCMaskedView.release.xcconfig */;
 =======
 			baseConfigurationReference = 7D2717918999F849BE8981B7D2C9A55C /* RNCMaskedView.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13133,11 +13133,11 @@ AD
 		};
 		8EDF7117C11D2735264B9A23A0E49A7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = C212A70791142B6F658B14FD31EF39B1 /* React-RCTLinking.debug.xcconfig */;
 =======
 			baseConfigurationReference = D155478ECE4CD8D506ACCFE0567418CD /* React-RCTNetwork.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13241,11 +13241,11 @@ AD
 		};
 		913B1A9C296DC113DDEDC84E5886972F /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 18DC10FCCF76BDDFB0ABCB1D09E976E5 /* FBLazyVector.debug.xcconfig */;
 =======
 			baseConfigurationReference = D09E4329FF037E271D1AD1D50CB49859 /* FBLazyVector.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -13322,7 +13322,7 @@ AD
 		};
 		940246CB1476DC7D7090A9000E6722FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 71F667855A0D56E6FA7456A30B786EFE /* React.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -13339,7 +13339,7 @@ AD
 			baseConfigurationReference = 59C0B072B9A58A2FD6B1A6B6F7F8A067 /* Folly.debug.xcconfig */;
 =======
 			baseConfigurationReference = 19486C42FCC9F338888ACB21B69AAC0C /* React-RCTText.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13360,7 +13360,7 @@ AD
 			};
 			name = Debug;
 		};
-<< HEAD
+
 		97B7D28D050EA794B219D25220CBE6EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B5021BBA4AFAB96551BE3C3DDFBEE98 /* React-RCTBlob.release.xcconfig */;
@@ -13368,7 +13368,7 @@ AD
 		9454D05E0C8F9EE7976824476ED29FAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 048680F5BDEE840604277E836468294B /* Folly.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13415,11 +13415,11 @@ AD
 		};
 		9C4D99DBFC56E4118BBB3684CD689F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = FCD0128B54A2273C601FA7D0585AE858 /* RNScreens.debug.xcconfig */;
 =======
 			baseConfigurationReference = 69E0ADD67F4680291B0BB437AF442BA8 /* RNScreens.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13442,11 +13442,11 @@ AD
 		};
 		9DA78D7B593488202E279CB3FE2C9FD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = D81F1A2E5A4B2EAD5286E38EC3DD7DA1 /* React-jsiexecutor.release.xcconfig */;
 =======
 			baseConfigurationReference = D3F1DF2FBEF968447763B05253E6D3B7 /* React-RCTAnimation.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13470,11 +13470,11 @@ AD
 		};
 		9E05EEC496208CB8675CBB89DFB6F258 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 2B9D5DC547EEE7D2D13FB54F21ABFB75 /* React.release.xcconfig */;
 =======
 			baseConfigurationReference = C8B41D5AA107A1F9475D39E6763ED7EF /* Pods-mobilehitt.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -13495,11 +13495,11 @@ AD
 		};
 		A02196AF3843A5DFC2DB0C00F1C7BB1D /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 33EBF1907D0BE0C3A19FD35C25F21A8F /* React-RCTVibration.release.xcconfig */;
 =======
 			baseConfigurationReference = 58D95A8C97B2751D8590AA7FD79697E0 /* React-jsiexecutor.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13523,11 +13523,11 @@ AD
 		};
 		A7CD1B33F9498A090885B036E5149419 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 35143C10093CEB604A5DEC7D48515AB2 /* FBReactNativeSpec.debug.xcconfig */;
 =======
 			baseConfigurationReference = 848650D98F289553AF6B2B5A1301E413 /* FBReactNativeSpec.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13550,11 +13550,11 @@ AD
 		};
 		AF325193A604CA5AD89DE0AE47974A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 2EFA64BEC521A2AC7967CBF3E1DB30CB /* ReactCommon.debug.xcconfig */;
 =======
 			baseConfigurationReference = FD47E34178C1D2F214A6B870CF31E896 /* ReactCommon.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13577,11 +13577,11 @@ AD
 		};
 		B0BE6B5951266E29EF0540108A66D997 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = E4D18E14CE412A1C1E07F7849462BD98 /* React-RCTActionSheet.debug.xcconfig */;
 =======
 			baseConfigurationReference = 3A4C94BE26D426E9AE13A082A82316C5 /* RCTTypeSafety.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13605,11 +13605,11 @@ AD
 		};
 		B2D3D4104838EA9FB1A3F849FEC59A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 0D8FF4F9F1215AB25BDEED068AD1432B /* RCTTypeSafety.release.xcconfig */;
 =======
 			baseConfigurationReference = EB941CC744EB89062F9F153D2468DF14 /* RNGestureHandler.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13632,11 +13632,11 @@ AD
 		};
 		BF3A34CF8604C80D7370340C291ADA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = CD4EA520D312AEDA48D95F15EB7ECD3C /* RNGestureHandler.debug.xcconfig */;
 =======
 			baseConfigurationReference = 01F90405507264E71D66BA4343538971 /* Yoga.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13659,11 +13659,11 @@ AD
 		};
 		BF866DBE9110C450B21FF51E8A20554B /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 3977F4009579FC987A2634F2C5FF042B /* React-RCTAnimation.release.xcconfig */;
 =======
 			baseConfigurationReference = 2EC620416AB63599380A22E981613CB5 /* RCTYouTube.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13687,11 +13687,11 @@ AD
 		};
 		C2BFC5DBC8756F63D0A08F6C44194984 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 3F67AA78534603A8A2BBE374FBA7B8A3 /* React-RCTImage.debug.xcconfig */;
 =======
 			baseConfigurationReference = A1339F67E59C462C3DEB370FCF366AF2 /* ReactCommon.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13715,11 +13715,11 @@ AD
 		};
 		CAD6996C2D5FE991C18FD3CA067508F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 3AF6FB038C3B992951591B57943C99E0 /* Yoga.debug.xcconfig */;
 =======
 			baseConfigurationReference = 42FC4F6C3C7989F1436084710B146A28 /* youtube-ios-player-helper.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13742,11 +13742,11 @@ AD
 		};
 		CAD6F242A0850DC46F584FDF4451E9D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 3D722D6705DD5A6F3F0189AFDA50AA7F /* ReactCommon.release.xcconfig */;
 =======
 			baseConfigurationReference = A01974A2A3BC566CFE273AD8EEF7DFED /* React-cxxreact.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13769,11 +13769,11 @@ AD
 		};
 		CB0A657424AC63984526CBD503F5CCFE /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 22F841FE4826E96E3B1E7F94B9F24339 /* React-RCTText.debug.xcconfig */;
 =======
 			baseConfigurationReference = 7C0920A52BA4ED3B581BE6A6DD8B11F2 /* React-RCTText.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13797,11 +13797,11 @@ AD
 		};
 		CE84E60340CBC5F7F7A1D8BBD10718F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 96689FC3787E91D187F6AECA9A0BB6BC /* React-RCTNetwork.debug.xcconfig */;
 =======
 			baseConfigurationReference = 4E232A88672F9FB5F420158F500F3926 /* YoutubePlayer-in-WKWebView.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13849,11 +13849,11 @@ AD
 		};
 		D207E72981BDD091E023B9E64A12C92F /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = A77E4ED56046B20F5697C661F3C8A735 /* React-cxxreact.debug.xcconfig */;
 =======
 			baseConfigurationReference = 8A28EADE3461973B6BFB041F1A17EA27 /* RNScreens.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13877,11 +13877,11 @@ AD
 		};
 		D36336093308D3BBF6C03DD048BA81B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = D8C1A288C564A07A22BEE974CA3AB4F0 /* react-native-safe-area-context.release.xcconfig */;
 =======
 			baseConfigurationReference = 4C8172828DF69494144015EE3D6E7C9D /* RNDevMenu.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -13905,11 +13905,11 @@ AD
 		};
 		DA9C6D8E927B27F6F1B3A641C1A298E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 29B19E8215ED148FDF13FF197A5BAD07 /* RNScreens.release.xcconfig */;
 =======
 			baseConfigurationReference = 3BCE4D2015C64D70C714A93FD2B8C72F /* React-RCTNetwork.release.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -14037,11 +14037,11 @@ AD
 		};
 		F919131B5F9946C09E4C89CC8981101D /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 055C239589BC23664C1632E92339ADA0 /* React-RCTVibration.debug.xcconfig */;
 =======
 			baseConfigurationReference = B6F910DEB8159DC85A390A15FB6CA276 /* React-RCTVibration.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -14078,11 +14078,11 @@ AD
 		};
 		FCC5B6DC8EFAB7DC8AC942A04F9080F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<< HEAD
+
 			baseConfigurationReference = 7CB4672B41187CB0C2BFA33067D27403 /* React-RCTText.release.xcconfig */;
 =======
 			baseConfigurationReference = E73E4368C64D991658D3C394BD815CA7 /* React-RCTAnimation.debug.xcconfig */;
->>>>>>> Jerry_V
+> Jerry_V
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -14103,7 +14103,7 @@ AD
 			};
 			name = Debug;
 		};
-<< HEAD
+
 =======
 		FFB9248C3452F7A55D1C03413B877C3C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -14129,7 +14129,7 @@ AD
 			};
 			name = Release;
 		};
->>>>>>> Jerry_V
+> Jerry_V
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -14151,7 +14151,7 @@ AD
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<< HEAD
+
 		068FD6D8E8FD0CFF97884ECB5D0EB1DE /* Build configuration list for PBXNativeTarget "Pods-mobilehitt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -14172,7 +14172,7 @@ AD
 			buildConfigurations = (
 				F0B75C728727F974589BDD8495D64DF7 /* Debug */,
 				D36336093308D3BBF6C03DD048BA81B0 /* Release */,
->>>>>>> Jerry_V
+> Jerry_V
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -14348,7 +14348,7 @@ AD
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<< HEAD
+
 		8417A30F41F3B13FAC489DB285895AE0 /* Build configuration list for PBXNativeTarget "RNReanimated" */ = {
 =======
 		74D1DCD05B00389ABC9B8FAE1BB70F19 /* Build configuration list for PBXNativeTarget "React-RCTText" */ = {
@@ -14361,7 +14361,7 @@ AD
 			defaultConfigurationName = Release;
 		};
 		769369AC38529CF76FE8258870021ACE /* Build configuration list for PBXNativeTarget "RNSVG" */ = {
->>>>>>> Jerry_V
+> Jerry_V
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71C0BC104288289743C2AE65C4F59858 /* Debug */,

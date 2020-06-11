@@ -367,7 +367,7 @@ namespace boost { namespace polygon{
       }
 
 //       inline void print() {
-//         std::cout << this << " " << tailp_ << " " << otherTailp_ << " " << holesList_.size() << " " << head_ << "\n";
+//         std::cout << this << " " << tailp_ << " " << otherTailp_ << " " << holesList_.size() << " " _ << "\n";
 //       }
 
       static inline std::pair<ActiveTail45*, ActiveTail45*> createActiveTail45sAsPair(Point point, bool solid,
