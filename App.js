@@ -4,7 +4,7 @@ import { ActivityIndicator, View } from 'react-native';
 // import { UtilityThemeProvider } from 'react-native-design-utility';
 import { ApplicationProvider } from '@ui-kitten/components';
 import { mapping, light as lightTheme } from '@eva-design/eva';
-import Login from './src/Screens/Login';
+import Login from './src/screens/Login';
 import AppNavigator from './src/components/AppNavigator';
 import { images } from './src/constants/images';
 import { cacheImages } from './src/utils/cacheImages';
@@ -35,8 +35,8 @@ export default class App extends React.Component {
       return (
         <View f={1} center bg="white">
           <ActivityIndicator size="large" />
-          {/* <Login /> */}
-          <View><Text>Hello</Text> </View>
+          <Login />
+
         </View>
       );
     }

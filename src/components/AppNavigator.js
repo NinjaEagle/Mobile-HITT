@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import Home from '../Screens/Home';
-import Performance from '../Screens/Performance';
-import Profile from '../Screens/Profile';
-import Exercise from '../Screens/Exercise';
-import Video from '../Screens/Video';
+import Home from '../screens/Home';
+import Performance from '../screens/Performance';
+import Profile from '../screens/Profile';
+import Exercise from '../screens/Exercise';
+import Video from '../screens/Video';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigation, BottomNavigationTab, Layout, Text } from '@ui-kitten/components';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createSwitchNavigator } from 'react-navigation';
-import SplashScreen from '../Screens/SplashScreen';
+import SplashScreen from '../screens/SplashScreen';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -40,7 +40,7 @@ const AuthNavigator = (): React.ReactElement => (
 // const AuthNavigator = createStackNavigator(
 //   {
 //     Login: {
-//       getScreen: () => require('../Screens/Login').default,
+//       getScreen: () => require('../screens/Login').default,
 //     },
 //   },
 //   {
@@ -63,7 +63,7 @@ const MainNavigator = () => (
 const TabNavigator = createSwitchNavigator(
   {
     Splash: {
-      getScreen: () => require('../Screens/SplashScreen').default,
+      getScreen: () => require('../screens/SplashScreen').default,
     },
     Auth: AuthNavigator,
     Main: MainNavigator,
