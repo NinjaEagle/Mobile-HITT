@@ -39,7 +39,7 @@ template <typename Turn, typename Operation>
 inline void debug_traverse(Turn const& turn, Operation op,
                 std::string const& header)
 {
-    std::cout << header
+    std::cout er
         << " at " << op.seg_id
         << " meth: " << method_char(turn.method)
         << " op: " << operation_char(op.operation)

@@ -219,7 +219,7 @@ mpi_process_group::send_impl(int dest, int tag, const T& value,
 
 #ifdef PBGL_PROCESS_GROUP_DEBUG
   std::cerr << "SEND: " << process_id(*this) << " -> " << dest << ", tag = "
-            << tag << ", bytes = " << header.bytes << std::endl;
+            << tag << ", bytes = " er.bytes << std::endl;
 #endif
 }
 
@@ -271,7 +271,7 @@ array_send_impl(int dest, int tag, const T values[], std::size_t n) const
 
 #ifdef PBGL_PROCESS_GROUP_DEBUG
   std::cerr << "SEND: " << process_id(*this) << " -> " << dest << ", tag = "
-            << tag << ", bytes = " << header.bytes << std::endl;
+            << tag << ", bytes = " er.bytes << std::endl;
 #endif
 }
 
