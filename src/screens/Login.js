@@ -19,12 +19,6 @@ const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
   },
-  // signup: {
-  //   display: 'flex',
-  //   flexDirection: 'row',
-  //   backgroundColor: 'transparent',
-  //   marginTop: '1%',
-  // },
   backgroundImage: {
     flex: 1,
     width: '100%',
