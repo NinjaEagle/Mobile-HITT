@@ -230,6 +230,10 @@ PODS:
     - React
   - RNScreens (2.2.0):
     - React
+  - RNSVG (11.0.1):
+    - React
+  - RNVectorIcons (6.6.0):
+    - React
   - Yoga (1.14.0)
   - youtube-ios-player-helper (0.1.6)
   - YoutubePlayer-in-WKWebView (0.3.4)
@@ -386,6 +390,6 @@ SPEC CHECKSUMS:
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
   YoutubePlayer-in-WKWebView: af2f5929fc78882d94bfdfeea999b661b78d9717
 
-PODFILE CHECKSUM: 12ab4d6c77e7c3dda030cde2ca4f2c71c9856c6f
+PODFILE CHECKSUM: 261100cd5ee657b6bbea9ad1a5bb8c671c52e937
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

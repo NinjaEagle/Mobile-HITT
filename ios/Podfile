@@ -38,9 +38,6 @@ target 'mobilehitt' do
   pod "youtube-ios-player-helper", "~> 0.1.4"
 
 
-  pod 'RCTYouTube', :path => '../node_modules/react-native-youtube'
-
-  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
   target 'mobilehittTests' do
     inherit! :search_paths

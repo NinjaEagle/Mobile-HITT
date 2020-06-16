@@ -46,29 +46,3 @@ const AppNavigator = () => (
   </NavigationContainer>
 );
 export default AppNavigator;
-
-// const AuthNavigator = createStackNavigator(
-//   {
-//     Login: {
-//       getScreen: () => require('../screens/Login').default,
-//     },
-//   },
-//   {
-//     navigationOptions: {
-//       header: null,
-//     },
-//   },
-// );
-
-// const TabNavigator = createSwitchNavigator(
-//   {
-//     Splash: {
-//       getScreen: () => require('../screens/SplashScreen').default,
-//     },
-//     Auth: AuthNavigator,
-//     Main: MainNavigator,
-//   },
-//   {
-//     intialRouteName: 'Splash',
-//   },
-// );
