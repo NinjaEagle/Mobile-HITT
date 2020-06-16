@@ -9,50 +9,7 @@ import LoginButton from '../commons/LoginButton';
 import { GoogleApi } from '../api/Google';
 
 const BoxAnimated = Animated.createAnimatedComponent(View);
-const Login = (props) => {
-  // const opacityAnim = () => {
-  //   Animated.timing(this.state.opacity, {
-  //     toValue: 1,
-  //     duration: 200,
-  //     delay: 300,
-  //   }).start();
-  // }
-  // const positionAnim = () => {
-  //   Animated.timing(this.state.position, {
-  //     toValue: 1,
-  //     duration: 400,
-  //     useNativeDriver: true,
-  //   }).start();
-  // };
-  // const onFacebookPress = async () => {
-  //   try {
-  //     const token = await FacebookApi.loginAsync();
-  //     console.log(token);
-  //   } catch (error) {
-  //     console.log('error', error);
-  //   }
-  // };
-  // render() {
-  //   const { opacity } = this.state;
-  //   const logoTranslate = this.state.position.interpolate({
-  //     inputRange: [0, 1],
-  //     outputRange: [150, 0],
-  //   });
-  // return (
-  //   <View style={styles.container}>
-  //     <BoxAnimated style={{ transform: [{ translateY: logoTranslate }] }}>
-  //       <View style={{ alignItems: 'center' }}>
-  //         <OnboardingLogo />
-  //       </View>
-  //     </BoxAnimated>
-  //     <BoxAnimated style={{ flex: 0.9, opacity }}>
-  //       <LoginButton onPress={() => props.signedIn()} type="google">
-  //         Continue with Google
-  //       </LoginButton>
-  //     </BoxAnimated>
-  //   </View>
-  // );
-};
+const Login = (props) => {};
 
 //////////////////////Style Sheets//////////////////////////
 const styles = StyleSheet.create({
