@@ -41,7 +41,6 @@ const Header = (props) =>
   ExercisesList.map((exercise, idx) => {
     //   <Card key={idx} {...props}>
     const { name, description, image } = exercise;
-    console.log(image);
     return (
       <Card key={idx} {...props} onSelect={(index) => props.navigation.navigate(name)}>
         <View>
