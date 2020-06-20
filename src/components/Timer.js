@@ -1,35 +1,37 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Layout, Text, Button } from '@ui-kitten/components';
 
-const Timer = ({ exercisesArr }) => {
+const Timer = ({exercisesArr}) => {
   const [timeRemaining, setTimeRemaining] = useState(0);
   const [isActive, setIsActive] = useState(false);
   // const timeRef = useRef(5);
 
-  console.log(isActive, timeRemaining, exercisesArr);
 
-  async function timer(count) {
-    console.log('In async:', count);
+  console.log('time state:', timeRemaining, );
+  console.log('active state:', isActive );
+
+  async function timer() {
+    console.log('In async:', timeRemaining);
     return new Promise((resolve) => {
       let intervalID = setInterval(() => {
-        count -= 1;
-        if (count <= 0) return resolve(), clearInterval(intervalID);
-        console.log(count);
+        setTimeRemaining(timeRemaining - 1);
+        if (timeRemaining <= 0) return{
+          resolve()
+          clearInterval(intervalID)
+          exercisesArr.shift();
+        } 
+        console.log(timeRemaining);
+        
       }, 1000);
     });
   }
-
-  // (function cycle() {
-  //   exercisesArr.forEach(async (exercise) => {
-  //     console.log(exercise);
-  //     await timer(exercise.time);
-  //   });
-  // })();
-
+  
+  
   useEffect(() => {
-    console.log('useEffect');
+    // if(exercisesArr.length > 1) setTimeRemaining(exercisesArr[0].time);
+    
     if (isActive && timeRemaining > 0) {
-      timer(timeRemaining);
+      // timer();
     } else if (timeRemaining <= 0) {
       //might be able to use fosr set next ref/timer
       console.log('starting next timer');

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from '../screens/Home';
-import Performance from '../screens/Performance';
+// import Performance from '../screens/Performance';
 import Profile from '../screens/Profile';
 import Exercise from '../screens/Exercise';
 import Video from '../screens/Video';
@@ -35,7 +35,7 @@ const TabNavigator = () => (
     <Screen name="Home" component={Home} />
     <Screen name="Exercise" component={Exercise} />
     <Screen name="Video" component={Video} />
-    <Screen name="Performance" component={Performance} />
+    {/* <Screen name="Performance" component={Performance} /> */}
     <Screen name="Profile" component={Profile} />
   </Navigator>
 );

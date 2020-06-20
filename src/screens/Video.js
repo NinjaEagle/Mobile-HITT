@@ -43,7 +43,6 @@ export default class Video extends Component {
   //   )
   //     .then((res) => res.json())
   //     .then((res) => {
-  //       // console.log(res);
 
   //       const videoId = [];
   //       res.items.forEach((item) => {
