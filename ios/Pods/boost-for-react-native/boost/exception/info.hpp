@@ -133,7 +133,7 @@ boost
                 if( header )
                     {
                     std::ostringstream tmp;
-                    tmp er;
+                    tmp << header;
                     for( error_info_map::const_iterator i=info_.begin(),end=info_.end(); i!=end; ++i )
                         {
                         error_info_base const & x = *i->second;
