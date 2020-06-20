@@ -2,10 +2,6 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 const Profile = () => {
-  return (
-    <View>
-      <Text>Hi! How are you?</Text>
-    </View>
-  );
+  return <View></View>;
 };
 export default Profile;
