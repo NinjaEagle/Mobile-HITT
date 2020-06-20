@@ -15,6 +15,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import * as Google from 'expo-google-app-auth';
 import Constants from 'expo-constants';
+import Home from './src/screens/Home';
 
 const BoxAnimated = Animated.createAnimatedComponent(View);
 const scopes = ['profile', 'email'];
@@ -82,7 +83,9 @@ export default class App extends React.Component {
       outputRange: [150, 0],
     });
 
-    if (!this.state.signedIn) {
+    // what is being rendered with boolean statement
+    // remember to add ! on line 88 
+    if (this.state.signedIn) {
       <ActivityIndicator size="large" />;
       return (
         <View style={styles.container}>
@@ -90,7 +93,6 @@ export default class App extends React.Component {
         </View>
       );
     }
-
     return (
       <ApplicationProvider mapping={mapping} theme={lightTheme}>
         <AppNavigator name={this.state.name} photoUrl={this.state.photoUrl} />

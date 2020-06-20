@@ -8,31 +8,41 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Button
 } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import { Button, Divider, Layout, TopNavigation } from '@ui-kitten/components';
+import { Divider, TopNavigation } from '@ui-kitten/components';
 import Timer from '../components/Timer';
 
-export default function HomeScreen() {
+export default function Home() {
+
+  const dummyTimers = [
+    { id: 1, title: 'timer 1', exercise: 'squat', time: 5 },
+    { id: 2, title: 'timer 2', exercise: 'push ups', time: 3 }
+  ];
   const navigateExercises = () => {
     navigation.navigate('Exercise');
   };
   return (
     <View style={styles.container}>
-      <Layout style={styles.home} />
+      <View style={styles.home} />
       <SafeAreaView>
         <TopNavigation alignment="center" />
         <Divider />
-        <Layout>{/* <Timer /> */}</Layout>
-        <Layout>
-          <Button onPress={navigateExercises}>OPEN EXERCISES</Button>
-        </Layout>
+        <View>
+          <Timer exercisesArr={dummyTimers}/>
+        </View>
+        <View>
+          <Button title="OPEN EXERCISES" onPress={navigateExercises}>
+            OPEN EXERCISES
+          </Button>
+        </View>
       </SafeAreaView>
     </View>
   );
 }
 
-HomeScreen.navigationOptions = {
+Home.navigationOptions = {
   header: null,
 };
 
