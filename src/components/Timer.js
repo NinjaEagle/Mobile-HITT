@@ -10,15 +10,15 @@ const Timer = ({exercisesArr}) => {
   console.log('time state:', timeRemaining, );
   console.log('active state:', isActive );
 
-  async function timer() {
+  async function timer(exercisesArr) {
     console.log('In async:', timeRemaining);
     return new Promise((resolve) => {
       let intervalID = setInterval(() => {
         setTimeRemaining(timeRemaining - 1);
         if (timeRemaining <= 0) return{
-          resolve()
-          clearInterval(intervalID)
-          exercisesArr.shift();
+          // resolve();
+          // clearInterval(intervalID)
+          // exercisesArr.shift();
         } 
         console.log(timeRemaining);
         
