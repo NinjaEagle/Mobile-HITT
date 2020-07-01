@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from '../screens/Home';
-import Performance from '../screens/Performance';
+// import Performance from '../screens/Performance';
 import Profile from '../screens/Profile';
 import Exercise from '../screens/Exercise';
 import Video from '../screens/Video';
+import Tabata from '../components/Tabata';
+import Running from '../components/Running';
+import Yoga from '../components/Yoga';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigation, BottomNavigationTab, Layout, Text } from '@ui-kitten/components';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createSwitchNavigator } from 'react-navigation';
-import SplashScreen from '../screens/SplashScreen';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-const { Stack } = createStackNavigator();
+// const { Stack } = createStackNavigator();
 
 const NavBar = ({ navigation, state, props }) => {
   return (
@@ -23,7 +25,6 @@ const NavBar = ({ navigation, state, props }) => {
     >
       <BottomNavigationTab title="Home" />
       <BottomNavigationTab title="Workouts" />
-      <BottomNavigationTab title="Video" />
       <BottomNavigationTab title="Performance" />
       <BottomNavigationTab title="Profile" />
     </BottomNavigation>
@@ -34,8 +35,10 @@ const TabNavigator = () => (
   <Navigator tabBar={(props) => <NavBar {...props} />}>
     <Screen name="Home" component={Home} />
     <Screen name="Exercise" component={Exercise} />
-    <Screen name="Video" component={Video} />
-    <Screen name="Performance" component={Performance} />
+    <Screen name="Tabata" component={Tabata} />
+    <Screen name="Running" component={Running} />
+    <Screen name="Yoga" component={Yoga} />
+    {/* <Screen name="Performance" component={Performance} /> */}
     <Screen name="Profile" component={Profile} />
   </Navigator>
 );

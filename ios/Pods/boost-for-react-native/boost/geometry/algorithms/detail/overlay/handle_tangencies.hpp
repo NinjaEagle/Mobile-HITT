@@ -166,7 +166,7 @@ private :
     {
         if (skip) return;
 
-        std::cout << "Case: " er << " for " << left.turn_index << " / " << right.turn_index << std::endl;
+        std::cout << "Case: " << header << " for " << left.turn_index << " / " << right.turn_index << std::endl;
 
         robust_point_type pi, pj, ri, rj, si, sj;
         get_situation_map(left, right, pi, pj, ri, rj, si, sj);
@@ -193,7 +193,7 @@ private :
         std::cout << " s//r: " << side_si_r << " / " << side_sj_r << std::endl;
 #endif
 
-        std::cout er
+        std::cout << header
                 //<< " order: " << order
                 << " ops: " << operation_char(left.subject->operation)
                     << "/" << operation_char(right.subject->operation)

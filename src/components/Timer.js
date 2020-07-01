@@ -6,41 +6,38 @@ const Timer = ({ exercisesArr }) => {
   const [isActive, setIsActive] = useState(false);
   // const timeRef = useRef(5);
 
-  console.log(isActive, timeRemaining, exercisesArr);
+  console.log('time state:', timeRemaining, 'active:', isActive);
 
-  async function timer(count) {
-    console.log('In async:', count);
+  async function timer() {
     return new Promise((resolve) => {
       let intervalID = setInterval(() => {
-        count -= 1;
-        if (count <= 0) return resolve(), clearInterval(intervalID);
-        console.log(count);
+        if (isActive) {
+          setTimeRemaining(timeRemaining - 1);
+          console.log('Asynctimerleft:', timeRemaining);
+          if (timeRemaining <= 0) {
+            return resolve();
+            clearInterval(intervalID);
+          }
+        }
       }, 1000);
     });
   }
 
-  // (function cycle() {
-  //   exercisesArr.forEach(async (exercise) => {
-  //     console.log(exercise);
-  //     await timer(exercise.time);
-  //   });
-  // })();
-
   useEffect(() => {
-    console.log('useEffect');
+    // if (exercisesArr.length > 1) setTimeRemaining(exercisesArr[0].time);
     if (isActive && timeRemaining > 0) {
-      timer(timeRemaining);
-    } else if (timeRemaining <= 0) {
+      timer();
+      exercisesArr.shift();
+    } else if (timeRemaining == 0 && exercisesArr.length != 0) {
+      setTimeRemaining(exercisesArr[0].time);
       //might be able to use fosr set next ref/timer
-      console.log('starting next timer');
-      // clearInterval(interval)
-      // setTimeRemaining(activeTime); // logic error?
+      console.log('NEXT TIMER');
     }
-    return () => {
-      console.log('cleanUP');
-      // clearInterval(interval);
-    };
-  }, [timeRemaining, isActive]);
+    // return () => {
+    //   console.log('cleanUP');
+    //   // clearInterval(interval);
+    // };
+  }, [isActive, timeRemaining]);
 
   // const reset = () => {
   //   setTimeRemaining(timeRef.current);

@@ -14,15 +14,15 @@ const navigateExercise = (props) => {
 const BackAction = (navigation) => (
   <TopNavigationAction onPress={navigateExercise(navigation)} icon={BackIcon} />
 );
-const Running = ({ navigation }) => {
+const Yoga = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <TopNavigation title="Exercise" accessoryLeft={BackAction} {...navigation} />
-      <Text>Start the timer to run</Text>
+      <Text>You can do this flow routine at morning or at night</Text>
     </View>
   );
 };
-export default Running;
+export default Yoga;
 
 const styles = StyleSheet.create({
   container: {
