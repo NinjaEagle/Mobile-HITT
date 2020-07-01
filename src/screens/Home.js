@@ -8,7 +8,7 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Button
+  Button,
 } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Divider, TopNavigation } from '@ui-kitten/components';
@@ -17,11 +17,10 @@ import Timer from '../components/Timer';
 
 // import { MonoText } from '../components/StyledText'
 
-export default function Home() {
-
+const Home = ({ navigation }) => {
   const dummyTimers = [
     { id: 1, title: 'timer 1', exercise: 'squat', time: 5 },
-    { id: 2, title: 'timer 2', exercise: 'push ups', time: 3 }
+    { id: 2, title: 'timer 2', exercise: 'push ups', time: 3 },
   ];
   const navigateExercises = () => {
     navigation.navigate('Exercise');
@@ -33,7 +32,7 @@ export default function Home() {
         <TopNavigation alignment="center" />
         <Divider />
         <View>
-          <Timer exercisesArr={dummyTimers}/>
+          <Timer exercisesArr={dummyTimers} />
         </View>
         <View>
           <Button title="OPEN EXERCISES" onPress={navigateExercises}>
@@ -43,7 +42,8 @@ export default function Home() {
       </SafeAreaView>
     </View>
   );
-}
+};
+export default Home;
 
 Home.navigationOptions = {
   header: null,
@@ -71,7 +71,6 @@ Home.navigationOptions = {
 //     );
 //   }
 // }
-
 
 const styles = StyleSheet.create({
   button: { flex: 1, justifyContent: 'center', alignItems: 'center' },

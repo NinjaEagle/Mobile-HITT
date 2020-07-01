@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import { SafeAreaView, Image, View, StyleSheet } from 'react-native';
+import {
+  SafeAreaView,
+  FlatList,
+  Image,
+  View,
+  StyleSheet,
+  TouchableWithoutFeedback,
+} from 'react-native';
 import {
   Card,
   Divider,
   Icon,
-  Layout,
   Text,
   TopNavigation,
   TopNavigationAction,
   Autocomplete,
 } from '@ui-kitten/components';
-import { TouchableHighlight } from 'react-native-gesture-handler';
+import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 // import Running from './src/screens/Running';
 // import AMRAP from './src/screens/AMRAP';
 // import Video from './Video';
@@ -31,39 +37,47 @@ const ExercisesList = [
     description: 'Sprints',
   },
   {
-    name: 'AMRAP',
+    name: 'Yoga',
     image: '',
-    description: 'Do as many reps as you can for each exercise! Stay motivated :D',
+    description: 'Flow yoga in the morning or at night',
   },
 ];
 
-const Header = (props) =>
-  ExercisesList.map((exercise, idx) => {
-    //   <Card key={idx} {...props}>
-    const { name, description, image } = exercise;
-    return (
-      <Card key={idx} {...props} onSelect={(index) => props.navigation.navigate(name)}>
-        <View>
-          <Text category="h6">{name}</Text>
-          <Text category="p1">{description}</Text>
-          {/* <Image style={styles.image} source={{ uri: image }}></Image> */}
-        </View>
-      </Card>
-    );
-  });
+const Header = (item, onSelect) => {
+  console.log(onSelect);
+
+  const { name, description, image } = item.item;
+  return (
+    <TouchableOpacity onPress={() => item.onSelect(name)}>
+      <View style={styles.item}>
+        <Text category="h6">{name}</Text>
+        <Text category="p1">{description}</Text>
+        {/* <Image style={styles.image} source={{ uri: image }}></Image> */}
+      </View>
+    </TouchableOpacity>
+  );
+};
 
 const Exercise = ({ navigation }) => {
-  const navigateBack = () => navigation.goBack();
-
-  const BackAction = () => <TopNavigationAction icon={BackIcon} onPress={navigateBack} />;
+  const navigateVideo = (name) => {
+    console.log(name);
+    navigation.navigate(name);
+  };
+  console.log(navigation, navigateVideo);
 
   return (
     <SafeAreaView style={styles.container} level="3">
-      <TopNavigation title="Exercise" alignment="center" leftControl={BackAction()} />
       <Divider />
       <Text category="h3">HIIT Daily Exercises</Text>
       <Text>Fit into your busy schedule and easy to mix up!</Text>
-      <Card style={styles.card} header={Header} />
+      <FlatList
+        styles={styles.card}
+        data={ExercisesList}
+        renderItem={({ item }) => {
+          return <Header item={item} key={item.id} onSelect={navigateVideo} />;
+        }}
+        keyExtractor={(item) => item.id}
+      />
     </SafeAreaView>
   );
 };
@@ -81,6 +95,7 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: 'center',
+    backgroundColor: '#1AC1F55C',
     flex: 1,
     flexDirection: 'column',
     textAlign: 'center',
@@ -91,6 +106,7 @@ const styles = StyleSheet.create({
     height: 100,
     resizeMode: 'contain',
   },
+  item: { backgroundColor: 'white', padding: 20, marginVertical: 8, marginHorizontal: 16 },
   tinyLogo: {
     width: 50,
     height: 50,
