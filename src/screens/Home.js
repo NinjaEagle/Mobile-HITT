@@ -9,7 +9,6 @@ import {
   View,
   ImageBackground,
 } from 'react-native';
-const screenWidth = Dimensions.get('window').width;
 
 import { Divider, TopNavigation, Avatar, Layout } from '@ui-kitten/components';
 import {LineChart} from 'react-native-chart-kit';
