@@ -17,9 +17,6 @@ import {
   Autocomplete,
 } from '@ui-kitten/components';
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
-// import Running from './src/screens/Running';
-// import AMRAP from './src/screens/AMRAP';
-// import Video from './Video';
 
 const BackIcon = (props) => <Icon {...props} name="arrow-back" />;
 
@@ -32,9 +29,9 @@ const ExercisesList = [
   },
   // https://befitglitz.com/how-to-use-tabata-fat-burning-workouts/
   {
-    name: 'Running',
+    name: 'FatShred',
     image: '',
-    description: 'Sprints',
+    description: 'Burn as much calories as you can!!',
   },
   {
     name: 'Yoga',

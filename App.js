@@ -8,7 +8,6 @@ import AppNavigator from './src/components/AppNavigator';
 import { images } from './src/constants/images';
 import { cacheImages } from './src/utils/cacheImages';
 import { theme } from './src/constants/theme';
-// import { hitt } from '../../assets/img/hitt.jpg';
 import OnboardingLogo from './src/commons/OnboardingLogo';
 import LoginButton from './src/commons/LoginButton';
 import { FontAwesome } from '@expo/vector-icons';

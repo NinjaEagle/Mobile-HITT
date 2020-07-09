@@ -6,7 +6,7 @@ import Profile from '../screens/Profile';
 import Exercise from '../screens/Exercise';
 import Video from '../screens/Video';
 import Tabata from '../components/Tabata';
-import Running from '../components/Running';
+import FatShred from '../components/FatShred';
 import Yoga from '../components/Yoga';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigation, BottomNavigationTab, Layout, Text } from '@ui-kitten/components';
@@ -36,7 +36,7 @@ const TabNavigator = () => (
     <Screen name="Home" component={Home} />
     <Screen name="Exercise" component={Exercise} />
     <Screen name="Tabata" component={Tabata} />
-    <Screen name="Running" component={Running} />
+    <Screen name="FatShred" component={FatShred} />
     <Screen name="Yoga" component={Yoga} />
     {/* <Screen name="Performance" component={Performance} /> */}
     <Screen name="Profile" component={Profile} />
