@@ -1,87 +1,43 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { Icon, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
-// import jumping from '../../assets/images/jumpingjacks';
-const BackIcon = (props) => {
-  console.log(props);
-  return <Icon {...props} name="arrow-back" />;
-};
-const navigateExercise = (props) => {
-  console.log('clicked');
-  // props.navigate('Exercise');
-};
+// import jumpingjacks from 'assets/images/jumpingjacks.gif';
 
-const BackAction = (navigation) => (
-  <TopNavigationAction onPress={navigateExercise(navigation)} icon={BackIcon} />
-);
-const onShouldStartLoadWithRequest = (navigator) => {
-  if (navigator.url.indexOf('embed') !== -1) {
-    return true;
-  } else {
-    videoPlayer.stopLoading(); //Some reference to your WebView to make it stop loading that URL
-    return false;
-  }
-};
 const FatShred = ({ navigation }) => {
+  const BackIcon = (props) => {
+    return <Icon {...props} name="arrow-back" />;
+  };
+
+  const navigateBack = () => {
+    navigation.goBack();
+  };
+  const BackAction = (navigation) => {
+    console.log('navigation', navigation);
+    return <TopNavigationAction icon={BackIcon} onPress={navigateBack} />;
+  };
+  const onShouldStartLoadWithRequest = (navigator) => {
+    if (navigator.url.indexOf('embed') !== -1) {
+      return true;
+    } else {
+      videoPlayer.stopLoading(); //Some reference to your WebView to make it stop loading that URL
+      return false;
+    }
+  };
+
   return (
     <View style={styles.container}>
-      <TopNavigation title="Exercise" accessoryLeft={BackAction} {...navigation} />
+      <TopNavigation title="Exercise" accessoryLeft={BackAction} />
       <Text>1. Jumping Jacks</Text>
-      <WebView
-        ref={(ref) => {
-          videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={jumping}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/jumpingjacks.gif')} />
       <Text>2. Mountain Climbers </Text>
-      <WebView
-        ref={(ref) => {
-          videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: mountainclimbers }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/mountain_climber.gif')} />
       <Text>3. Skipping Rope</Text>
-      <WebView
-        ref={(ref) => {
-          videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: skippingrope }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/skippingRope.gif')} />
       <Text>4. Burpees</Text>
-      <WebView
-        ref={(ref) => {
-          this.videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: burpees }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/burpees.gif')} />
       <Text>5. Squats</Text>
-      <WebView
-        ref={(ref) => {
-          this.videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: squats }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/squats.gif')} />
     </View>
   );
 };
@@ -89,9 +45,10 @@ export default FatShred;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-    flex: 2,
+    backgroundColor: '#1AC1F55C',
+    flex: 1,
     flexDirection: 'column',
     paddingTop: 50,
   },
+  image: { height: 250, width: 250 },
 });

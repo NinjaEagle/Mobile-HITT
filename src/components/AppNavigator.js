@@ -4,7 +4,6 @@ import Home from '../screens/Home';
 // import Performance from '../screens/Performance';
 import Profile from '../screens/Profile';
 import Exercise from '../screens/Exercise';
-import Video from '../screens/Video';
 import Tabata from '../components/Tabata';
 import FatShred from '../components/FatShred';
 import Yoga from '../components/Yoga';
@@ -30,6 +29,15 @@ const NavBar = ({ navigation, state, props }) => {
     </BottomNavigation>
   );
 };
+// const Exercise = () => {
+//   return (
+//     <Navigator>
+//       <Screen name="Tabata" component={Tabata} />
+//       <Screen name="FatShred" component={FatShred} />
+//       <Screen name="Yoga" component={Yoga} />
+//     </Navigator>
+//   );
+// };
 
 const TabNavigator = () => (
   <Navigator tabBar={(props) => <NavBar {...props} />}>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   FlatList,
@@ -7,15 +7,7 @@ import {
   StyleSheet,
   TouchableWithoutFeedback,
 } from 'react-native';
-import {
-  Card,
-  Divider,
-  Icon,
-  Text,
-  TopNavigation,
-  TopNavigationAction,
-  Autocomplete,
-} from '@ui-kitten/components';
+import { Divider, Icon, Text } from '@ui-kitten/components';
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 
 const BackIcon = (props) => <Icon {...props} name="arrow-back" />;
@@ -41,8 +33,6 @@ const ExercisesList = [
 ];
 
 const Header = (item, onSelect) => {
-  console.log(onSelect);
-
   const { name, description, image } = item.item;
   return (
     <TouchableOpacity onPress={() => item.onSelect(name)}>
@@ -57,16 +47,14 @@ const Header = (item, onSelect) => {
 
 const Exercise = ({ navigation }) => {
   const navigateVideo = (name) => {
-    console.log(name);
     navigation.navigate(name);
   };
-  console.log(navigation, navigateVideo);
 
   return (
     <SafeAreaView style={styles.container} level="3">
       <Divider />
-      <Text category="h3">HIIT Daily Exercises</Text>
-      <Text>Fit into your busy schedule and easy to mix up!</Text>
+      <Text category="h3">HIIT Exercise Routines</Text>
+      <Text>Fit into your busy schedule and easy to mix it up!</Text>
       <FlatList
         styles={styles.card}
         data={ExercisesList}

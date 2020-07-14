@@ -1,7 +1,6 @@
 // import * as WebBrowser from 'expo-web-browser'
 import * as React from 'react';
 import {
-  Image,
   Platform,
   SafeAreaView,
   StyleSheet,
@@ -10,10 +9,8 @@ import {
   View,
   Button,
 } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
 import { Divider, TopNavigation } from '@ui-kitten/components';
 import Timer from '../components/Timer';
-// import Exercise from '../Screens/Exercise';
 
 // import { MonoText } from '../components/StyledText'
 
@@ -48,29 +45,6 @@ export default Home;
 Home.navigationOptions = {
   header: null,
 };
-
-// function DevelopmentModeNotice() {
-//   if (__DEV__) {
-//     const learnMoreButton = (
-//       <Text onPress={handleLearnMorePress} style={styles.helpLinkText}>
-//         Learn more
-//       </Text>
-//     );
-
-//     return (
-//       <Text style={styles.developmentModeText}>
-//         Development mode is enabled: your app will be slower but you can use useful development
-//         tools. {learnMoreButton}
-//       </Text>
-//     );
-//   } else {
-//     return (
-//       <Text style={styles.developmentModeText}>
-//         You are not in development mode: your app will run at full speed.
-//       </Text>
-//     );
-//   }
-// }
 
 const styles = StyleSheet.create({
   button: { flex: 1, justifyContent: 'center', alignItems: 'center' },

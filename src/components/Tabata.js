@@ -1,20 +1,6 @@
 import React, { useState } from 'react';
-import { Text, StyleSheet, View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { Button, Image, Text, StyleSheet, View } from 'react-native';
 import { Icon, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
-
-const BackIcon = (props) => {
-  console.log(props);
-  return <Icon {...props} name="arrow-back" />;
-};
-const navigateExercise = (props) => {
-  console.log('clicked');
-  // props.navigate('Exercise');
-};
-
-const BackAction = (navigation) => (
-  <TopNavigationAction onPress={navigateExercise(navigation)} icon={BackIcon} />
-);
 
 const Tabata = ({ navigation }) => {
   const [isReady, setReady] = useState(false);
@@ -25,25 +11,6 @@ const Tabata = ({ navigation }) => {
   const [currentTime, setCurrentTime] = useState(0);
   const [fullscreen, setFullScreen] = useState(0);
 
-  // _youTubeRef = React.createRef();
-
-  // componentDidMount() {
-  //   fetch(
-  //     `https://www.googleapis.com/youtube/v3/search/?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${results}`,
-  //   )
-  //     .then((res) => res.json())
-  //     .then((res) => {
-
-  //       const videoId = [];
-  //       res.items.forEach((item) => {
-  //         videoId.push(item);
-  //       });
-  //       this.setState({ data: videoId });
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
   const onShouldStartLoadWithRequest = (navigator) => {
     if (navigator.url.indexOf('embed') !== -1) {
       return true;
@@ -52,57 +19,31 @@ const Tabata = ({ navigation }) => {
       return false;
     }
   };
+  const BackIcon = (props) => {
+    return <Icon {...props} name="arrow-back" />;
+  };
+
+  const navigateBack = () => {
+    navigation.goBack();
+  };
+  const BackAction = (navigation) => {
+    return <TopNavigationAction onPress={navigateBack} icon={BackIcon} />;
+  };
 
   return (
     <View style={styles.container}>
-      <TopNavigation title="Exercise" accessoryLeft={BackAction} {...navigation} />
+      <TopNavigation title="Exercise" accessoryLeft={BackAction} />
       {/* Jump Squat https://www.youtube.com/watch?v=0LGJZqKfpXs */}
       <Text>1. Jump Squat</Text>
-      <WebView
-        ref={(ref) => {
-          videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: 'https://www.youtube.com/embed/0LGJZqKfpXs' }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/jump_squat.gif')} />
       <Text>2. Lateral Lunge</Text>
       {/* https://www.youtube.com/watch?v=sWdOsQSHSrc */}
-      <WebView
-        ref={(ref) => {
-          videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: 'https://www.youtube.com/embed/sWdOsQSHSrc' }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/lateral_lunge.gif')} />
       <Text>3. Mountain Climber</Text>
-      <WebView
-        ref={(ref) => {
-          videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: 'https://www.youtube.com/embed/XIeCMhNWFQQ?t=183' }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/mountain_climber.gif')} />
       <Text>4. Plank with Row</Text>
       {/* https://www.youtube.com/watch?v=Gtc_Ns3qYYo */}
-      <WebView
-        ref={(ref) => {
-          this.videoPlayer = ref;
-        }}
-        style={styles.WebViewStyle}
-        source={{ uri: 'https://www.youtube.com/embed/Gtc_Ns3qYYo' }}
-        allowsInlineMediaPlayback
-        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest} //for iOS
-        onNavigationStateChange={onShouldStartLoadWithRequest} //for Android
-      />
+      <Image style={styles.image} source={require('../../assets/images/plank_row.gif')} />
     </View>
   );
 };
@@ -111,16 +52,12 @@ export default Tabata;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#1AC1F55C',
     flex: 2,
     flexDirection: 'column',
     paddingTop: 50,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
+
   buttonGroup: {
     flexDirection: 'row',
     alignSelf: 'center',
@@ -136,6 +73,10 @@ const styles = StyleSheet.create({
   },
   buttonTextSmall: {
     fontSize: 15,
+  },
+  image: {
+    marginLeft: 10,
+    marginRight: 10,
   },
   player: {
     alignSelf: 'stretch',
