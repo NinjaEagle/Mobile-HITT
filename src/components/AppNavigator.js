@@ -4,9 +4,8 @@ import Home from '../screens/Home';
 // import Performance from '../screens/Performance';
 import Profile from '../screens/Profile';
 import Exercise from '../screens/Exercise';
-import Video from '../screens/Video';
 import Tabata from '../components/Tabata';
-import Running from '../components/Running';
+import FatShred from '../components/FatShred';
 import Yoga from '../components/Yoga';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigation, BottomNavigationTab, Layout, Text } from '@ui-kitten/components';
@@ -30,13 +29,22 @@ const NavBar = ({ navigation, state, props }) => {
     </BottomNavigation>
   );
 };
+// const Exercise = () => {
+//   return (
+//     <Navigator>
+//       <Screen name="Tabata" component={Tabata} />
+//       <Screen name="FatShred" component={FatShred} />
+//       <Screen name="Yoga" component={Yoga} />
+//     </Navigator>
+//   );
+// };
 
 const TabNavigator = () => (
   <Navigator tabBar={(props) => <NavBar {...props} />}>
     <Screen name="Home" component={Home} />
     <Screen name="Exercise" component={Exercise} />
     <Screen name="Tabata" component={Tabata} />
-    <Screen name="Running" component={Running} />
+    <Screen name="FatShred" component={FatShred} />
     <Screen name="Yoga" component={Yoga} />
     {/* <Screen name="Performance" component={Performance} /> */}
     <Screen name="Profile" component={Profile} />
