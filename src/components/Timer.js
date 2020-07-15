@@ -1,48 +1,43 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Layout, Text, Button } from '@ui-kitten/components';
 
-const Timer = ({exercisesArr}) => {
+const Timer = ({ exercisesArr }) => {
   const [timeRemaining, setTimeRemaining] = useState(0);
   const [isActive, setIsActive] = useState(false);
   // const timeRef = useRef(5);
 
+  console.log('time state:', timeRemaining, 'active:', isActive);
 
-  console.log('time state:', timeRemaining, );
-  console.log('active state:', isActive );
-
-  async function timer(exercisesArr) {
-    console.log('In async:', timeRemaining);
+  async function timer() {
     return new Promise((resolve) => {
       let intervalID = setInterval(() => {
-        setTimeRemaining(timeRemaining - 1);
-        if (timeRemaining <= 0) return{
-          // resolve();
-          // clearInterval(intervalID)
-          // exercisesArr.shift();
-        } 
-        console.log(timeRemaining);
-        
+        if (isActive) {
+          setTimeRemaining(timeRemaining - 1);
+          console.log('Asynctimerleft:', timeRemaining);
+          if (timeRemaining <= 0) {
+            return resolve();
+            clearInterval(intervalID);
+          }
+        }
       }, 1000);
     });
   }
-  
-  
+
   useEffect(() => {
-    // if(exercisesArr.length > 1) setTimeRemaining(exercisesArr[0].time);
-    
+    // if (exercisesArr.length > 1) setTimeRemaining(exercisesArr[0].time);
     if (isActive && timeRemaining > 0) {
-      // timer();
-    } else if (timeRemaining <= 0) {
+      timer();
+      exercisesArr.shift();
+    } else if (timeRemaining == 0 && exercisesArr.length != 0) {
+      setTimeRemaining(exercisesArr[0].time);
       //might be able to use fosr set next ref/timer
-      console.log('starting next timer');
-      // clearInterval(interval)
-      // setTimeRemaining(activeTime); // logic error?
+      console.log('NEXT TIMER');
     }
-    return () => {
-      console.log('cleanUP');
-      // clearInterval(interval);
-    };
-  }, [timeRemaining, isActive]);
+    // return () => {
+    //   console.log('cleanUP');
+    //   // clearInterval(interval);
+    // };
+  }, [isActive, timeRemaining]);
 
   // const reset = () => {
   //   setTimeRemaining(timeRef.current);

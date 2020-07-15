@@ -4,6 +4,11 @@
  *
  * @format
  */
+const path = require('path');
+const extraNodeModules = {
+  common: path.resolve(__dirname + '/../assets'),
+};
+const watchFolders = [path.resolve(__dirname + '/../assets')];
 
 module.exports = {
   transformer: {
@@ -14,5 +19,4 @@ module.exports = {
       },
     }),
   },
-  
 };

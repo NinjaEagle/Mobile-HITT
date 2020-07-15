@@ -95,7 +95,8 @@ export default function Home(props) {
       </SafeAreaView>
     </Layout>
   );
-}
+};
+export default Home;
 
 const styles = StyleSheet.create({
   titleContainer: {

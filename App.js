@@ -1,18 +1,17 @@
 import 'react-native-gesture-handler';
 import React, { useState } from 'react';
 import { ActivityIndicator, Animated, StyleSheet, View, Text, Button } from 'react-native';
-// import { UtilityThemeProvider } from 'react-native-design-utility';
-import { ApplicationProvider } from '@ui-kitten/components';
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { mapping, light as lightTheme } from '@eva-design/eva';
+import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import AppNavigator from './src/components/AppNavigator';
 import { images } from './src/constants/images';
 import { cacheImages } from './src/utils/cacheImages';
 import { theme } from './src/constants/theme';
-// import { hitt } from '../../assets/img/hitt.jpg';
 import OnboardingLogo from './src/commons/OnboardingLogo';
 import LoginButton from './src/commons/LoginButton';
 import { FontAwesome } from '@expo/vector-icons';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+// import { Colors } from 'react-native/Libraries/NewAppScreen';
 import * as Google from 'expo-google-app-auth';
 import Constants from 'expo-constants';
 import Home from './src/screens/Home';
@@ -84,7 +83,7 @@ export default class App extends React.Component {
     });
 
     // what is being rendered with boolean statement
-    // remember to add ! on line 88 
+    // remember to add ! on line 88
     if (this.state.signedIn) {
       <ActivityIndicator size="large" />;
       return (
@@ -94,9 +93,12 @@ export default class App extends React.Component {
       );
     }
     return (
-      <ApplicationProvider mapping={mapping} theme={lightTheme}>
-        <AppNavigator name={this.state.name} photoUrl={this.state.photoUrl} />
-      </ApplicationProvider>
+      <>
+        <IconRegistry icons={EvaIconsPack} />
+        <ApplicationProvider mapping={mapping} theme={lightTheme}>
+          <AppNavigator name={this.state.name} photoUrl={this.state.photoUrl} />
+        </ApplicationProvider>
+      </>
     );
   }
 }
