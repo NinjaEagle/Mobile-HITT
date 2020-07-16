@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Image, Text, StyleSheet, View } from 'react-native';
+import { Button, Image, Text, StyleSheet, View, TouchableHighlight } from 'react-native';
 import { Icon, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 
 const Tabata = ({ navigation }) => {
@@ -30,19 +30,23 @@ const Tabata = ({ navigation }) => {
     return <TopNavigationAction onPress={navigateBack} icon={BackIcon} />;
   };
 
+  const renderVideo = () => {
+    console.log('rendering video');
+    navigation.navigate('Video');
+  };
+  
   return (
     <View style={styles.container}>
       <TopNavigation title="Exercise" accessoryLeft={BackAction} />
-      {/* Jump Squat https://www.youtube.com/watch?v=0LGJZqKfpXs */}
       <Text>1. Jump Squat</Text>
-      <Image style={styles.image} source={require('../../assets/images/jump_squat.gif')} />
+      <TouchableHighlight onPress={() => renderVideo()}>
+        <Image style={styles.image} source={require('../../assets/images/Jump_Squat.gif')} />
+      </TouchableHighlight>
       <Text>2. Lateral Lunge</Text>
-      {/* https://www.youtube.com/watch?v=sWdOsQSHSrc */}
       <Image style={styles.image} source={require('../../assets/images/lateral_lunge.gif')} />
       <Text>3. Mountain Climber</Text>
       <Image style={styles.image} source={require('../../assets/images/mountain_climber.gif')} />
       <Text>4. Plank with Row</Text>
-      {/* https://www.youtube.com/watch?v=Gtc_Ns3qYYo */}
       <Image style={styles.image} source={require('../../assets/images/plank_row.gif')} />
     </View>
   );

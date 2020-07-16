@@ -11,6 +11,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigation, BottomNavigationTab, Layout, Text } from '@ui-kitten/components';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createSwitchNavigator } from 'react-navigation';
+import Video from '../screens/Video';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -29,15 +30,6 @@ const NavBar = ({ navigation, state, props }) => {
     </BottomNavigation>
   );
 };
-// const Exercise = () => {
-//   return (
-//     <Navigator>
-//       <Screen name="Tabata" component={Tabata} />
-//       <Screen name="FatShred" component={FatShred} />
-//       <Screen name="Yoga" component={Yoga} />
-//     </Navigator>
-//   );
-// };
 
 const TabNavigator = () => (
   <Navigator tabBar={(props) => <NavBar {...props} />}>
@@ -46,6 +38,7 @@ const TabNavigator = () => (
     <Screen name="Tabata" component={Tabata} />
     <Screen name="FatShred" component={FatShred} />
     <Screen name="Yoga" component={Yoga} />
+    <Screen name="Video" component={Video} />
     {/* <Screen name="Performance" component={Performance} /> */}
     <Screen name="Profile" component={Profile} />
   </Navigator>

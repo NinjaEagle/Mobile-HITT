@@ -96,7 +96,6 @@ export default function Home(props) {
     </Layout>
   );
 };
-export default Home;
 
 const styles = StyleSheet.create({
   titleContainer: {
