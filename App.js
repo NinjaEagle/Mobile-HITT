@@ -2,6 +2,7 @@ import 'react-native-gesture-handler';
 import React, { useState } from 'react';
 import { ActivityIndicator, Animated, StyleSheet, View, Text, Button } from 'react-native';
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
+import AnimatedLoader from 'react-native-animated-loader';
 import { mapping, light as lightTheme } from '@eva-design/eva';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import AppNavigator from './src/components/AppNavigator';
@@ -14,7 +15,6 @@ import { FontAwesome } from '@expo/vector-icons';
 // import { Colors } from 'react-native/Libraries/NewAppScreen';
 import * as Google from 'expo-google-app-auth';
 import Constants from 'expo-constants';
-import Home from './src/screens/Home';
 
 const BoxAnimated = Animated.createAnimatedComponent(View);
 const scopes = ['profile', 'email'];
@@ -26,6 +26,7 @@ export default class App extends React.Component {
     photoUrl: '',
     opacity: new Animated.Value(0),
     position: new Animated.Value(0),
+    visible: false,
   };
 
   opacityAnim = () => {
@@ -74,9 +75,16 @@ export default class App extends React.Component {
     await Promise.all([...imagesAssets]);
     Animated.parallel([this.positionAnim(), this.opacityAnim()]).start();
   };
+  handlePress = () => {
+    setTimeout(() => {
+      this.setState({
+        visible: !this.state.visible,
+      });
+    }, 1000);
+  };
 
   render() {
-    const { opacity } = this.state;
+    const { opacity, visible } = this.state;
     const logoTranslate = this.state.position.interpolate({
       inputRange: [0, 1],
       outputRange: [150, 0],
@@ -88,6 +96,13 @@ export default class App extends React.Component {
       <ActivityIndicator size="large" />;
       return (
         <View style={styles.container}>
+          <AnimatedLoader
+            visible={visible}
+            overlayColor="rgba(255,255,255,0.75)"
+            animationStyle={styles.lottie}
+            speed={1}
+          />
+          <Button title="press" onPress={this.handlePress} />
           <Login signIn={this.signIn} opacity={opacity} logo={logoTranslate} />
         </View>
       );
@@ -157,4 +172,5 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderRadius: 150,
   },
+  lottie: { width: 100, height: 100 },
 });
